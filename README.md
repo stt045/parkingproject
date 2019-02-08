@@ -7,6 +7,7 @@ Collaborators: **Steven Tran, Angela Liu, Chiao Wang**
 Park Now is a mobile web app design to assist UCSD students in the horrendous task known as parking
 
 **Project Description**
+
 This is a parking assistant application aimed to help UCSD students more quickly find 
 parking on campus.
 
