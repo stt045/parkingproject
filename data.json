@@ -1,0 +1,14 @@
+{
+	"reminders": [
+		{
+			"reminderTime": "7:20am",
+			"classTime": "8:00am",
+			"day": "Monday"
+		},
+		{
+			"reminderTime": "8:50am",
+			"classTime": "9:30am",
+			"day": "Tuesday"
+		}
+	]
+}

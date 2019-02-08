@@ -8,6 +8,9 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parking.js"></script>
 </head>
 <body>
 	<div class="header">	
@@ -18,18 +21,20 @@
 		</div>
 	</div>
 
-	<div>
+	<div id=reminderList>
 		<!-- Dynamically Listing all of our current reminders -->
-		<ol>
-		{{#each reminder}}
-			<li><a href="#{{id}}">{{name}}</a></li>
+		<ul class="list-unstyled">
+		{{#each reminders}}
+			<li>
+				<div>
+					<p> Reminder Time: {{reminderTime}} </p>
+					<p> Class Time: {{classTime}} </p>
+					<p> Day: {{day}} </p>
+				</div>	
+			</li>
 		{{/each}}		
-		</ol>	
+		</ul>	
 	</div>
-
-	<div>
-		<p> <br/> Reminders Go here </p>
-	</div>	
 
 
 	<!-- FOOTER -->

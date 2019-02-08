@@ -37,6 +37,9 @@ th {
 	padding: 15px;
 	font-size: 30px;
 	position: center;
+	height: 650px;
+	overflow-y: auto;
+	position: relative;
 	/*background-color: #cce5ff;*/
 }
 
@@ -99,6 +102,9 @@ th {
 .settings {
 	font-size: 30px;
 	position: center;
+	overflow-y: auto;
+	position: relative;
+	height: 626px;
 }
 
 .settings li {
@@ -171,8 +177,18 @@ th {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+#reminderList {
+	font-size: 20px;
+	padding: 15px;
+	position: center;
+	height: 660px;
+	overflow-y: auto;
+	position: relative;
+}
 
-
+#reminderList li {
+	border: 1px;
+}
 
 
 
