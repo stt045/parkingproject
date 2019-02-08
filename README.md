@@ -7,12 +7,8 @@ Collaborators: **Steven Tran, Angela Liu, Chiao Wang**
 Park Now is a mobile web app design to assist UCSD students in the horrendous task known as parking
 
 **Project Description**
-
 This is a parking assistant application aimed to help UCSD students more quickly find 
 parking on campus.
-
-This application logs users in using TritonLink SSO, so it has access to user's 
-current class schedules.
 
 It allows users to view current parking conditions across all parking lots and 
 parking structures on campus in real-time.
@@ -23,24 +19,21 @@ as to when parking lots are filling up or are full.
 Users also have the ability to set reminders for when to leave their home in the 
 morning to guaruntee parking on campus. 
 
-**Pages with completed HTML**
+**TO DO**
 
-* [x] welcome screen
-* [x] login screen
-* [x] permit adding screen
-* [x] index - homepage
-* [x] reminders screen
-* [x] reminder adding screen
-* [x] settings screen
-* [x] help screen
-* [ ] full parking alert
-* [ ] reminder alert
+* [ ] Create JSON data file and be able to read in onto the page.
+* [ ] Be able to dynamically add new reminders = adding new items into the JSON
+* [ ] Fix the screens that don't have a stable footer.
+* [ ] implement alert for when choosing to receive notification for parking structure
+* [ ] Create the screen for the alarm app
+* [ ] Display new reminders on the reminder tab. 
+* [ ] Come up with specific text for the reminder screen
+* [ ] Make buttons and links all consistent.
+* [ ] Need to make sure all the buttons and tabs on the bottom stay static when scrolling
 
-**Notes**
+**OPTIONAL THINGS TO IMPLEMENT**
+* [ ] Setup Login page to work with Facebook
+* [ ] Start doing CSS to match the wireframes. 
 
-Need to edit the CSS to be used correctly on mobile sites.
 
-Need to also make the buttons and links consistent
-
-Need to make sure all the buttons and tabs on the bottom stay static when scrolling
 
