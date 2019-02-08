@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Settings</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<div class="header">
+		<h2>Settings</h2>
+	</div>
+
+	<p>include a list of settings</p>	
+
+	<div class="settings">
+		<ul class="list-unstyled">
+			<li>  
+				<p id="editLabel">Edit Permit</p>
+				<table>
+					<th>A</th>
+					<th>B</th>
+					<th>S</th>
+					<th>V</th>	
+				</table>
+
+				<p>
+					<font size="-0.5">
+						<button onclick="add a function" id="buttons">Confirm</button>
+					</font>
+				</p>
+
+			</li>
+			<li>
+				<form action="help">
+    				<input type="submit" value="Help" />
+				</form> 
+			</li>
+			<li>
+				<form action="login">
+    				<input type="submit" value="Logout" />
+				</form> 
+			</li>
+
+		</ul>
+	</div> 
+
+	<!-- PAGE FOOTER -->
+	<div>
+		<table class="tabs">
+			<tr>
+				<!--<th><a href="">Parking</a></th>-->
+				<th>
+					<form action="parking">
+    					<input type="submit" value="Parking" />
+					</form>
+				</th>
+				<th>
+					<form action="reminders">
+    					<input type="submit" value="Reminders" />
+					</form>
+				</th>
+				<th>
+					<form action="settings">
+    					<input type="submit" value="Settings" />
+					</form>
+				</th>
+			</tr>	
+		</table>	
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

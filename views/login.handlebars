@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+</head>
+<body>
+
+	<!-- Application Image inserted here -->
+	<div class="imgcontainer">
+    	<!-- <img src="custom image"> -->
+  	</div>
+
+  	<!-- Page Header -->
+	<div class="header">
+		<h2>LOGIN via TritonLink</h2>
+	</div>	
+
+	<button>
+		<form action="welcome">
+    		<input type="submit" value="Go Back" />
+		</form> 
+	</button>
+
+	<!-- Login and Password Fields + Login Button -->
+	<div class="container">
+    	<label for="username"><b>Student ID</b></label>
+    	<input type="text" placeholder="Enter Student ID" name="username" required>
+
+    	<p> <br/> </p>
+
+    	<label for="password"><b>Password</b></label>
+    	<input type="password" placeholder="Enter Password" name="password" required>
+
+    	<p></p>
+
+    	<!-- Need to add functionality to remember users, if possible -->
+    	<font size="-1">
+    	<label>
+      		<input type="checkbox" checked="checked" name="remember"> Remember me
+    	</label>
+    	</font>
+
+    	<!-- NEED TO LINK BUTTON to PERMIT screen -->
+    	<!--
+    	<button type="submit" class="next"><a href="permit">Login</a></button>
+		-->	
+
+    </div>
+
+    <div class="next">
+			<a href="permit">LOGIN</a>
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

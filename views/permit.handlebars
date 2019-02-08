@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Add Permit Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
+</head>
+<body>
+	<div class="announcement">
+		<h2>SELECT PARKING PERMIT</h2>
+	</div>	
+
+	<button onclick="goBack()">Go Back</button>
+
+	<div class="permits">
+		<ul class="list-unstyled">
+			<li> A PERMIT </li>
+			<li> B PERMIT </li>
+			<li> S PERMIT </li>
+			<li> CARPOOL PERMIT </li>
+			<li> DISABLED PERMIT </li>
+		</ul>	
+	</div>
+
+	<div class="next">
+		<a href="parking"> CONTINUE TO PARKING NOW </a>
+	</div>	
+
+	<script>
+		function goBack() {
+		  	window.history.back();
+		}	
+	</script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

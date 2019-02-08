@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Home Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+</head>
+
+<body">
+	<div class="header">
+		<h2>Available Parking</h2>
+	</div>
+
+	<div class="message">
+		Select a parking structure to recieve notifications	 
+	</div>	
+
+
+ <!--Either use lists or just make multiple divs to separate different parking structures. Can use https://www.w3schools.com/w3css/w3css_mobile.asp as a referernce tool -->
+
+	<div class="options">
+		<ul class="list-unstyled">
+			<li> Pangea </li>
+			<li> Hopkins </li>
+			<li> Osler </li>
+			<li> Gilman </li>
+			<li> P406 </li>
+			<li> P408 </li>
+
+			<li> Pangea </li>
+			<li> Hopkins </li>
+			<li> Osler </li>
+			<li> Gilman </li>
+			<li> P406 </li>
+			<li> P408 </li>
+		</ul>
+	</div> 	
+
+	<table>
+		<tr>
+			<th>
+				<form action="parking">
+					<input type="submit" value="Parking" />
+				</form>
+			</th>
+			<th>
+				<form action="reminders">
+					<input type="submit" value="Reminders" />
+				</form>
+			</th>
+			<th>
+				<form action="settings">
+					<input type="submit" value="Settings" />
+				</form>
+			</th>
+		</tr>	
+	</table>	
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
