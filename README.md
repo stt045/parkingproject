@@ -22,8 +22,8 @@ morning to guaruntee parking on campus.
 
 **TO DO**
 
-* [ ] Create JSON data file and be able to read in onto the page.
-* [ ] Be able to dynamically add new reminders = adding new items into the JSON
+* [x] Create JSON data file and be able to read in onto the page. - Steven
+* [ ] Be able to dynamically add new reminders = adding new items into the JSON - Steven
 * [ ] Fix the screens that don't have a stable footer.
 * [ ] implement alert for when choosing to receive notification for parking structure
 * [ ] Create the screen for the alarm app
@@ -33,8 +33,8 @@ morning to guaruntee parking on campus.
 * [ ] Need to make sure all the buttons and tabs on the bottom stay static when scrolling
 
 **OPTIONAL THINGS TO IMPLEMENT**
-* [ ] Setup Login page to work with Facebook
-* [ ] Start doing CSS to match the wireframes. 
+* [x] Setup Login page (Wizrd of Oz Login)
+* [ ] Start doing CSS to match the wireframes. - Angela
 
 
 
