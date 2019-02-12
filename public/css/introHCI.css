@@ -1,3 +1,5 @@
+/* ENTIRE SCREEN */
+
 
 /* PAGE HEADERS */
 .header {
@@ -47,7 +49,10 @@ th {
 	/*background-color: #cce5ff;*/
 	border: 2px solid black;
 	margin: 10px;
-	padding: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .message {
@@ -121,6 +126,11 @@ th {
 	width: 100%;
 }
 
+/* Margin for "Edit Permit Label on Settings page" */
+#editLabel {
+	margin-left: 8px;
+}
+
 #buttons {
 	border: 1px solid black;
 	margin-left: 10px;
@@ -153,8 +163,12 @@ th {
 
 .reminderList li {
 	border: 2px solid black;
-	margin: 10px;
-	padding: 20px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+
 }
 
 
