@@ -21,11 +21,11 @@
 		</div>
 	</div>
 
-	<div id=reminderList>
+	<div id="reminderDiv">
 		<!-- Dynamically Listing all of our current reminders -->
-		<ul class="list-unstyled">
+		<ul class="list-unstyled reminderList">
 		{{#each reminders}}
-			<li>
+			<li class="reminderList">
 				<div>
 					<p> Reminder Time: {{reminderTime}} </p>
 					<p> Class Time: {{classTime}} </p>

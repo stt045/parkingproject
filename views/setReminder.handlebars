@@ -18,45 +18,21 @@
 		</div>
 	</div>
 
+	<div class="container">
+		<label for="classTime">Time of Class</label>
+    	<input type="time" placeholder="Enter Time" name="time" required>
 
-	<div class="dropdown">
-  		<button onclick="myFunction()" class="dropbtn">Remind me __ mins before</button>
-  		<div id="myDropdown" class="dropdown-content">
-		    <a href="#">5</a>
-		    <a href="#">10</a>
-		    <a href="#">15</a>
-		    <a href="#">20</a>
-  		</div>
-	</div>
-<!--
-	<div>
-		<a href="reminders" id="rightOption"> save </a>
-		<a href="reminders" id="leftOption"> cancel </a>
-	</div>
--->
+    	<p> <br/> </p>
 
-	<!-- Javascript Code taken from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
-	<script>
-		/* When the user clicks on the button, 
-		toggle between hiding and showing the dropdown content */
-		function myFunction() {
-		  document.getElementById("myDropdown").classList.toggle("show");
-		}
+    	<label for="reminderTime">Reminder</label>
+    	<input type="number" placeholder="Time in Minutes" name="reminder" required>
 
-		// Close the dropdown menu if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
-	</script>	
+    	<p> <br/> </p>
+
+    	<label for="day">Day of Week</label>
+    	<input type="text" placeholder="Day of Week" name="day" required>
+    </div>
+	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>

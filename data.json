@@ -9,6 +9,21 @@
 			"reminderTime": "8:50am",
 			"classTime": "9:30am",
 			"day": "Tuesday"
+		},
+		{
+			"reminderTime": "7:20am",
+			"classTime": "8:00am",
+			"day": "Wednesday"
+		},
+		{
+			"reminderTime": "8:50am",
+			"classTime": "9:30am",
+			"day": "Thursday"
+		},
+		{
+			"reminderTime": "7:20am",
+			"classTime": "8:00am",
+			"day": "Friday"
 		}
 	]
 }
