@@ -39,6 +39,6 @@ morning to guaruntee parking on campus.
 * [ ] Implement error prevention when trying to edit permit without having selected one yet. 
 * [ ] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
 * [ ] Fix reminder information to display with am/pm and correct formats
-
+* [ ] Add checkboxes to each alarm to toggle on/off
 
 
