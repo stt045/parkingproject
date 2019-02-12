@@ -9,7 +9,7 @@
 	position: sticky;
 	text-align: center;
 	border: 2px solid black;
-	background-color: #ffdea5;
+	background-color: #ffcb72;
 	/*background-color: #cce5ff;*/
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -19,7 +19,7 @@
 table {
 	font-size: 18.3px;
 	width: 100%;
-	background-color: #ffdea5;
+	background-color: #ffcb72;
 	z-index: 1;
 	position: sticky;
 	bottom: 0;
