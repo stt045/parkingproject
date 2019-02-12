@@ -15,7 +15,7 @@ $(document).ready(function() {
 		// If current color is white, turn to something else
 		if(color == "rgba(0, 0, 0, 0)" || color == "rgb(255, 255, 255)") {
 			$(".options li, .settings th").css("background", "white");
-			$(this).css("background", "yellow");
+			$(this).css("background", "#4CAF50");
 		} else {
 			$(this).css("background", "white");
 		}

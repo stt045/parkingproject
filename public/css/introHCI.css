@@ -55,6 +55,7 @@ th {
 	padding-bottom: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
+	background-color: white;
 }
 
 .message {
@@ -64,6 +65,7 @@ th {
 	margin-top: 25px;
 	border-bottom: 2px solid black;
 	border-top: 2px solid black;
+	background-color: white;
 }
 
 .announcement {
@@ -126,6 +128,10 @@ th {
 .settings li {
 	border: 1px solid black;
 	width: 100%;
+}
+
+.settings th {
+	background-color: white;
 }
 
 /* Margin for "Edit Permit Label on Settings page" */
