@@ -104,7 +104,7 @@ th {
 	position: center;
 	overflow-y: auto;
 	position: relative;
-	height: 628px;
+	height: 658px;
 }
 
 .settings li {
@@ -137,7 +137,7 @@ th {
 }
 
 .reminderList {
-	padding: 15px;
+	/*padding: 15px;*/
 	position: center;
 	font-size: 18px;
 }
