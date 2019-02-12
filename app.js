@@ -17,6 +17,7 @@ var reminders = require('./routes/reminders');
 var setReminder = require('./routes/setReminder');
 var help = require('./routes/help');
 var settings = require('./routes/settings');
+var add = require('./routes/add');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +52,7 @@ app.get('/login', login.view);
 app.get('/welcome', welcome.view);
 app.get('/help', help.view);
 app.get('/permit', permit.view);
+app.get('/add', add.addReminder);
 
 // Example route
 // app.get('/users', user.list);

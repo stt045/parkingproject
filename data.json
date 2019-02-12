@@ -1,27 +1,27 @@
 {
 	"reminders": [
 		{
-			"reminderTime": "7:20am",
+			"reminderTime": "20",
 			"classTime": "8:00am",
 			"day": "Monday"
 		},
 		{
-			"reminderTime": "8:50am",
+			"reminderTime": "20",
 			"classTime": "9:30am",
 			"day": "Tuesday"
 		},
 		{
-			"reminderTime": "7:20am",
+			"reminderTime": "25",
 			"classTime": "8:00am",
 			"day": "Wednesday"
 		},
 		{
-			"reminderTime": "8:50am",
+			"reminderTime": "30",
 			"classTime": "9:30am",
 			"day": "Thursday"
 		},
 		{
-			"reminderTime": "7:20am",
+			"reminderTime": "10",
 			"classTime": "8:00am",
 			"day": "Friday"
 		}
