@@ -46,6 +46,7 @@ th {
 }
 
 .options li {
+	height: 100px;
 	margin: 10px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -53,6 +54,23 @@ th {
 	padding-right: 10px;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.inner {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.num {
+	float: right;
+	right: 0;
+	text-align: center;
+}
+
+.spot {
+	/*border: 1px solid black;*/
+	font-size: 20px;
+	float:right;
 }
 
 .message {
