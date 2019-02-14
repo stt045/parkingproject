@@ -25,16 +25,16 @@ morning to guaruntee parking on campus.
 * [x] Create JSON data file and be able to read in onto the page. - Steven
 * [x] Be able to dynamically add new reminders = adding new items into the JSON - Steven
 * [x] Fix the screens that don't have a stable footer.
-* [ ] implement alert for when choosing to receive notification for parking structure
+* [x] implement alert for when choosing to receive notification for parking structure
 * [ ] Create the screen for the reminder notifications
 * [x] Display new reminders on the reminder tab. 
 * [ ] Come up with specific text for the reminder screen
-* [ ] Make buttons and links all consistent.
+* [x] Make buttons and links all consistent.
 * [x] Need to make sure all the buttons and tabs on the bottom stay static when scrolling
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [x] Setup Login page (Wizard of Oz Login) - Steven
-* [ ] Start doing CSS to match the wireframes. - Angela
+* [x] Start doing CSS to match the wireframes. - Angela
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
 * [ ] Implement error prevention when trying to edit permit without having selected one yet. 
 * [ ] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
