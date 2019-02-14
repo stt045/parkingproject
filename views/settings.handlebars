@@ -8,31 +8,62 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parking.js"></script>
 </head>
-<body>
+<body class="screen">
 	
 	<div class="header">
 		<h2>Settings</h2>
 	</div>
 
-	<p>include a list of settings</p>	
-
 	<div class="settings">
 		<ul class="list-unstyled">
 			<li>  
-				<p id="editLabel">Edit Permit</p>
-				<table>
-					<th>A</th>
-					<th>B</th>
-					<th>S</th>
-					<th>V</th>	
-				</table>
+				<div class="dropdown">
+				  	<button class="dropbtn">Edit Permit</button>
+				 	<div class="dropdown-content">
+				    	<a href="#">S</a>
+				    	<a href="#">B</a>
+				    	<a href="#">A</a>
+				    	<a href="#">V</a>
+				    	<a href="#">Nights/Weekend</a>
+				    	<a href="#">Motorcycle</a>
+				  	</div>
+				</div>
 
+				<!--
+				<table>
+					<th>
+						<div class="psetting">
+							S
+						</div>		
+					</th>
+					<th>
+						<div class="psetting">
+							B
+						</div>	
+					</th>
+					<th>
+						<div class="psetting">
+							A
+						</div>	
+					</th>
+					<th>
+						<div class="psetting">
+							V
+						</div>	
+					</th>	
+				</table>
+				-->
+				<!-- confirmation button used with previous design 
 				<p>
 					<font size="-0.5">
-						<button onclick="add a function" id="buttons">Confirm</button>
+						<button onclick="window.location.href = 'settings';" id="buttons">Confirm</button>
 					</font>
 				</p>
+				-->
 
 			</li>
 			<li>
@@ -51,9 +82,8 @@
 
 	<!-- PAGE FOOTER -->
 	<div>
-		<table class="tabs">
+		<table>
 			<tr>
-				<!--<th><a href="">Parking</a></th>-->
 				<th>
 					<form action="parking">
     					<input type="submit" value="Parking" />
@@ -64,7 +94,7 @@
     					<input type="submit" value="Reminders" />
 					</form>
 				</th>
-				<th>
+				<th bgcolor="white">
 					<form action="settings">
     					<input type="submit" value="Settings" />
 					</form>

@@ -8,8 +8,11 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parking.js"></script>
 </head>
-<body>
+<body class="screen">
 
 	<!-- Application Image inserted here -->
 	<div class="imgcontainer">
@@ -29,8 +32,8 @@
 
 	<!-- Login and Password Fields + Login Button -->
 	<div class="container">
-    	<label for="username"><b>Student ID</b></label>
-    	<input type="text" placeholder="Enter Student ID" name="username" required>
+    	<label for="username"><b>Username</b></label>
+    	<input type="text" placeholder="Enter Username" name="username" required>
 
     	<p> <br/> </p>
 
@@ -42,20 +45,12 @@
     	<!-- Need to add functionality to remember users, if possible -->
     	<font size="-1">
     	<label>
-      		<input type="checkbox" checked="checked" name="remember"> Remember me
+      		<input type="checkbox" checked="unchecked" name="remember"> Remember me
     	</label>
     	</font>
-
-    	<!-- NEED TO LINK BUTTON to PERMIT screen -->
-    	<!--
-    	<button type="submit" class="next"><a href="permit">Login</a></button>
-		-->	
-
     </div>
 
-    <div class="next">
-			<a href="permit">LOGIN</a>
-	</div>
+    <button class="block" onclick="window.location.href = 'permit';"> LOGIN</button>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

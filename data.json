@@ -1,0 +1,29 @@
+{
+	"reminders": [
+		{
+			"reminderTime": "20",
+			"classTime": "8:00am",
+			"day": "Monday"
+		},
+		{
+			"reminderTime": "20",
+			"classTime": "9:30am",
+			"day": "Tuesday"
+		},
+		{
+			"reminderTime": "25",
+			"classTime": "8:00am",
+			"day": "Wednesday"
+		},
+		{
+			"reminderTime": "30",
+			"classTime": "9:30am",
+			"day": "Thursday"
+		},
+		{
+			"reminderTime": "10",
+			"classTime": "8:00am",
+			"day": "Friday"
+		}
+	]
+}
