@@ -33,6 +33,9 @@ table {
 th {
 	border: 2px solid black;
 	border-color: white;
+	border: 2px solid black;
+	border-color: white;
+	/*border: 3px solid black;*/
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-right: 16px;
@@ -66,6 +69,7 @@ th {
 }
 
 .options li {
+	/*border-radius: 10px;*/
 	height: 100px;
 	margin: 10px;
 	padding-top: 15px;
@@ -73,7 +77,7 @@ th {
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);*/
 }
 
 .inner {
@@ -109,12 +113,16 @@ th {
 }
 
 .announcement {
+	/*padding-color: black;*/
+	/*width: 500px;*/
 	margin-top: 80px;
 	margin-bottom: 40px;
 	text-align: center;
 }
 
 .permits li{
+
+	border-radius: 10px;
 	margin: 10px;
 	padding: 20px;
 	font-size: 20px;
@@ -144,9 +152,10 @@ th {
   background-color: #ddd;
   color: black;
 }
-
+/* login vai TritonLink page */
 .container {
 	/*background-color: #cce5ff;*/
+	
 	margin-top: 200px;
 	vertical-align: 0;
 	text-align: center;
@@ -217,6 +226,7 @@ th {
 }
 
 .reminderList li {
+	border-radius: 10px;
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-top: 10px;
