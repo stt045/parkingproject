@@ -109,12 +109,21 @@ th {
 	position: sticky;
 }
 
+
+/* text on permit's page */
 .announcement {
+	position: sticky;
+	position: absolute;
 	/*padding-color: black;*/
 	/*width: 500px;*/
 	margin-top: 80px;
 	margin-bottom: 40px;
 	text-align: center;
+}
+
+.permits {
+	margin-top: 150px;
+	overflow-y: auto;
 }
 
 .permits li{
