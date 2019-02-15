@@ -305,7 +305,7 @@ th {
 /* on-off switch reminders page */ 
 .onoffswitch {
     position: relative; width: 72px;
-    top: -45px;
+    top: -50px;
     left:230px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
