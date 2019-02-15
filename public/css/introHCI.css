@@ -29,7 +29,6 @@ table {
 	z-index: 1;
 	position: sticky;
 	bottom: 0;
-	
 }
 
 th {
@@ -160,7 +159,6 @@ th {
 /* login vai TritonLink page */
 .container {
 	/*background-color: #cce5ff;*/
-	
 	margin-top: 200px;
 	vertical-align: 0;
 	text-align: center;
