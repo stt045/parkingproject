@@ -22,11 +22,12 @@ morning to guaruntee parking on campus.
 
 **TO DO**
 * [ ] Create the alert for the reminder notifications
-* [ ] Create the alert for the parking notifications
+* [x] Create the alert for the parking notifications
+* [ ] Create the actual parking notification update
 * [ ] Come up with specific text for the reminder screen
 * [ ] Add sound for notifications
 * [ ] Fix the toggle selectors in the reminders page
-* [ ] Make sure parking lot selection is consistent after traveling to different pages
+* [x] Make sure parking lot selection is consistent after traveling to different pages
 * [ ] Make sure parking alerts will still run even while on a different page
 * [ ] show current permit in settings and parking page
 * [ ] Error prevention on permit page. Can continue without selection.
