@@ -6,7 +6,7 @@ $(document).ready(function() {
 	initializePage();
 	
 	var currLot = "";
-	console.log(sessionStorage.getItem("curr")); // delete
+	console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
 
 	// Setting parking state
 	if(sessionStorage.getItem("curr") == null) {
@@ -21,8 +21,8 @@ $(document).ready(function() {
 
 
 	/*
-	 * This function highlights the parking structure the user selects. This is an indication to the user
-	 * to know which one he has selected. 
+	 * This function highlights the parking structure the user selects. This is an 
+	 * indication to the user to know which one he has selected. 
 	 */
 	$(".settings th, .permits li").click(function() {
 		var color = $( this ).css("background-color");
@@ -39,7 +39,13 @@ $(document).ready(function() {
 		}
 	})
 
-	// Specifically for parking alerts
+	/*
+	 * When a parking area is chosen, it is logged in Session Storage and
+	 * will alert the user if the would like to receive notifications.
+	 * ---------------------------- TODO -------------------------------
+	 * Add the actual notifications by using a timer that is still active as you
+	 * continue to adventure into other tabs.
+	 */
 	$(".options li").click(function() {
 		var color = $( this ).css("background-color");
 
@@ -56,9 +62,8 @@ $(document).ready(function() {
 			
 			// Setting session ID
 			var lotId = this.id;
-			console.log("lotID : " + lotId); // delete later
 			sessionStorage.setItem("curr", lotId);
-			console.log("Session Item: " + sessionStorage.getItem("curr")); // delete later
+			console.log("curr session is: " + sessionStorage.getItem("curr")); // delete later
 			
 			// Parking alerts		
 			swal({
@@ -82,7 +87,7 @@ $(document).ready(function() {
 			$(this).css("background", "white");
 			$(this).css('color', 'black');
 			sessionStorage.setItem("curr", null);
-			console.log("Session Item: " + sessionStorage.getItem("curr")); // delete later
+			console.log("curr session is: " + sessionStorage.getItem("curr")); // delete later
 			
 		}
 	})
