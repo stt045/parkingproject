@@ -1,5 +1,6 @@
 'use strict'
 
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -11,7 +12,6 @@ $(document).ready(function() {
 	 * to know which one he has selected. 
 	 */
 	$(".settings th, .permits li").click(function() {
-		console.log("listitem clicked");
 		var color = $( this ).css("background-color");
 
 		// If current color is white, turn to something else
@@ -30,7 +30,6 @@ $(document).ready(function() {
 	$(".options li").click(function() {
 		console.log("listitem clicked");
 		var color = $( this ).css("background-color");
-		console.log(is(this));
 
 		// If current color is white, turn to something else
 		if(color == "rgba(0, 0, 0, 0)" || color == "rgb(255, 255, 255)") {
@@ -41,7 +40,6 @@ $(document).ready(function() {
 
 			// Assign current lot
 			currLot = $(this).find("#name").text();
-			console.log(currLot);
 			var message = "Now receiving alerts for " + currLot;
 			
 			// Parking alerts		
@@ -61,6 +59,7 @@ $(document).ready(function() {
 			  	}
 			});
 			// End parking alert
+			
 		} else {
 			$(this).css("background", "white");
 			$(this).css('color', 'black');
