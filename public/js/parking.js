@@ -5,9 +5,21 @@
 $(document).ready(function() {
 	initializePage();
 
-
 	var currLot = "";
+
 	console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
+	console.log("condition is: " + sessionStorage.getItem("notification"));
+	// Psuedo Parking notification interval alerts
+	if(sessionStorage.getItem("notification") == "true") { // start timer
+ 		// Start psuedo alert timer
+ 		console.log("begin pseudo timer");
+		setInterval(function(){ 
+			//swal(sessionStorage.getItem("currLot") + " is full"); 
+			//var alertSound = new Audio("alert.mp3");
+			//alertSound.play();
+		}, 5000);
+	}
+
 
 	// Setting parking state
 	if(sessionStorage.getItem("curr") == "null") {
@@ -95,7 +107,9 @@ $(document).ready(function() {
 
 				// Assign current lot
 				currLot = $(this).find("#name").text();
+				sessionStorage.setItem("currLot", currLot);
 				var message = "Now receiving alerts for " + currLot;
+
 				
 				// Setting session ID
 				var lotId = this.id;
@@ -113,18 +127,33 @@ $(document).ready(function() {
 				.then((willDelete) => {
 				  	if (willDelete) { // Pressed OK
 				    	// Store parking lot value
+				    	sessionStorage.setItem("notification", "true");
+				    	console.log("parking interval on");
+				    	location.reload();
 				  	} else { // Pressed Cancel
 				    	$(this).css("background", "white");
 						$(this).css('color', 'black');
+						sessionStorage.setItem("notification", "false");
+						console.log("parking interval off");
+
+						$(this).css("background", "white");
+						$(this).css('color', 'black');
+						sessionStorage.setItem("curr", null);
+						console.log("curr session is: " + sessionStorage.getItem("curr"));
+
+						location.reload();
 				  	}
 				});
 				// End parking alert
-				
 			} else {
 				$(this).css("background", "white");
 				$(this).css('color', 'black');
 				sessionStorage.setItem("curr", null);
 				console.log("curr session is: " + sessionStorage.getItem("curr")); // delete later
+
+				sessionStorage.setItem("notification", "false");
+				console.log("parking interval off");
+				location.reload();
 				
 			}
 		}else { // Permit is null
