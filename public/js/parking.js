@@ -6,10 +6,19 @@ $(document).ready(function() {
 	initializePage();
 	
 	var currLot = "";
+	console.log(sessionStorage.getItem("curr")); // delete
 
-	//TODO: delete
-	sessionStorage.setItem("curr", "hello");
-	console.log(sessionStorage.getItem("curr"));
+	// Setting parking state
+	if(sessionStorage.getItem("curr") == null) {
+		// Do nothing
+	}else {
+		var num = sessionStorage.getItem("curr");
+		var x = document.getElementById(num);
+
+		$(x).css("background", "#4CAF50");
+		$(x).css('color', 'white');
+	}
+
 
 	/*
 	 * This function highlights the parking structure the user selects. This is an indication to the user
@@ -32,7 +41,6 @@ $(document).ready(function() {
 
 	// Specifically for parking alerts
 	$(".options li").click(function() {
-		console.log("listitem clicked");
 		var color = $( this ).css("background-color");
 
 		// If current color is white, turn to something else
@@ -45,16 +53,18 @@ $(document).ready(function() {
 			// Assign current lot
 			currLot = $(this).find("#name").text();
 			var message = "Now receiving alerts for " + currLot;
-
-			//TODO: delete
-			sessionStorage.setItem("curr", this);
-			console.log(sessionStorage.getItem("curr"));
+			
+			// Setting session ID
+			var lotId = this.id;
+			console.log("lotID : " + lotId); // delete later
+			sessionStorage.setItem("curr", lotId);
+			console.log("Session Item: " + sessionStorage.getItem("curr")); // delete later
 			
 			// Parking alerts		
 			swal({
 			  	title: "Parking Alerts",
 			  	text: message,
-			  	icon: "warning",
+			  	icon: "info",
 			  	buttons: true,
 			  	dangerMode: true,
 			})
@@ -71,12 +81,15 @@ $(document).ready(function() {
 		} else {
 			$(this).css("background", "white");
 			$(this).css('color', 'black');
+			sessionStorage.setItem("curr", null);
+			console.log("Session Item: " + sessionStorage.getItem("curr")); // delete later
+			
 		}
 	})
 
 
 	$(".dropdown-content a").click(function() {
-		console.log("clicked");
+		console.log("clicked dropdown");
 		location.reload();
 	})
 })
