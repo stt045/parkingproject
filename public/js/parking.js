@@ -7,6 +7,10 @@ $(document).ready(function() {
 	
 	var currLot = "";
 
+	//TODO: delete
+	sessionStorage.setItem("curr", "hello");
+	console.log(sessionStorage.getItem("curr"));
+
 	/*
 	 * This function highlights the parking structure the user selects. This is an indication to the user
 	 * to know which one he has selected. 
@@ -41,6 +45,10 @@ $(document).ready(function() {
 			// Assign current lot
 			currLot = $(this).find("#name").text();
 			var message = "Now receiving alerts for " + currLot;
+
+			//TODO: delete
+			sessionStorage.setItem("curr", this);
+			console.log(sessionStorage.getItem("curr"));
 			
 			// Parking alerts		
 			swal({
