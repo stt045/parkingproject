@@ -35,7 +35,26 @@ $(document).ready(function() {
 			$(".options li").css("color", "black");
 			$(this).css("background", "#4CAF50");
 			$(this).css('color', 'white');
-			alert("You will now be receiving notifications for " + $(this, ".inner").text());
+			//alert("You will now be receiving notifications for " + $(this, ".inner").text());
+			
+			// Parking alerts		
+			swal({
+			  	title: "Parking Alerts",
+			  	text: "Are you sure you want Parking alerts?",
+			  	icon: "warning",
+			  	buttons: true,
+			  	dangerMode: true,
+			})
+			.then((willDelete) => {
+			  	if (willDelete) { // Pressed OK
+			    	
+			  	} else { // Pressed Cancel
+			    	$(this).css("background", "white");
+					$(this).css('color', 'black');
+			  	}
+			});
+			// End parking alert
+
 		} else {
 			$(this).css("background", "white");
 			$(this).css('color', 'black');
