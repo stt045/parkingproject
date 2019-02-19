@@ -21,24 +21,24 @@ Users also have the ability to set reminders for when to leave their home in the
 morning to guaruntee parking on campus. 
 
 **TO DO**
-
-* [x] Create JSON data file and be able to read in onto the page. - Steven
-* [x] Be able to dynamically add new reminders = adding new items into the JSON - Steven
-* [x] Fix the screens that don't have a stable footer.
-* [x] implement alert for when choosing to receive notification for parking structure
-* [ ] Create the screen for the reminder notifications
-* [x] Display new reminders on the reminder tab. 
+* [ ] Create the alert for the reminder notifications
+* [ ] Create the alert for the parking notifications
 * [ ] Come up with specific text for the reminder screen
-* [x] Make buttons and links all consistent.
-* [x] Need to make sure all the buttons and tabs on the bottom stay static when scrolling
+* [ ] Add sound for notifications
+* [ ] Fix the toggle selectors in the reminders page
+* [ ] Make sure parking lot selection is consistent after traveling to different pages
+* [ ] Make sure parking alerts will still run even while on a different page
+* [ ] show current permit in settings and parking page
+* [ ] Error prevention on permit page. Can continue without selection.
+* [ ] Add dummy sound feedback - JS timer 
+* [ ] Update parking spots when parking alerts go off
 
 **OPTIONAL THINGS TO IMPLEMENT**
-* [x] Setup Login page (Wizard of Oz Login) - Steven
-* [x] Start doing CSS to match the wireframes. - Angela
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
 * [ ] Implement error prevention when trying to edit permit without having selected one yet. 
 * [ ] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
 * [ ] Fix reminder information to display with am/pm and correct formats
-* [ ] Add checkboxes to each alarm to toggle on/off
+* [x] Add checkboxes to each alarm to toggle on/off
+* [ ] Make back buttons and text bigger
 
 
