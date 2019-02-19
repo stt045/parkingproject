@@ -32,6 +32,7 @@ morning to guaruntee parking on campus.
 * [ ] Error prevention on permit page. Can continue without selection.
 * [ ] Add dummy sound feedback - JS timer 
 * [ ] Update parking spots when parking alerts go off
+* [ ] Implement Facebook Login
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
