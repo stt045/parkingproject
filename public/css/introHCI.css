@@ -68,7 +68,6 @@ th {
 }
 
 .options li {
-	/*border-radius: 10px;*/
 	height: 100px;
 	margin: 10px;
 	padding-top: 15px;
@@ -76,7 +75,6 @@ th {
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: white;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);*/
 }
 
 .inner {
@@ -92,7 +90,7 @@ th {
 
 .spot {
 	/*border: 1px solid black;*/
-	font-size: 20px;
+	font-size: 18px;
 	float:right;
 }
 
@@ -131,7 +129,6 @@ th {
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
-	/*background-color: black;*/
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
 }
@@ -197,6 +194,25 @@ th {
 
 .settings th {
 	background-color: white;
+}
+
+.parkStyle { /* Continue to add styling and color */
+	display: inline-block;
+	border: 1px solid black;
+	float: right;
+	width: 44%;
+	height: 5%;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+.parkStyle2 { /* Permit visibility on parking page*/
+	font-size: 20px;
+	font-weight: bold;
 }
 
 #buttons {
