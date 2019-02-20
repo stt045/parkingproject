@@ -17,10 +17,10 @@ $(document).ready(function() {
  		// Start psuedo alert timer
  		console.log("begin pseudo timer");
 		setInterval(function(){ 
-			//swal(sessionStorage.getItem("currLot") + " is full"); 
+			swal(sessionStorage.getItem("currLot") + " is full"); 
 			//var alertSound = new Audio("alert.mp3");
 			//alertSound.play();
-		}, 5000);
+		}, 3000);
 	}
 
 
