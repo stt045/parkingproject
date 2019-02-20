@@ -7,7 +7,9 @@ $(document).ready(function() {
 
 	var currLot = "";
 
+	// disable start using parknow button 
 	$(document.getElementById("startUsing")).attr("disabled","disabled");
+	$(document.getElementById("welcomeButton")).css("background","#4CAF50");
 
 	console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
 	console.log("condition is: " + sessionStorage.getItem("notification"));

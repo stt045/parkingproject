@@ -150,6 +150,36 @@ th {
   left: 5%;
 }
 
+#welcomeButton {
+  display: block;
+  width: 90%;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+}
+
+#loginButton {
+  display: block;
+  width: 90%;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+}
+
 .block:hover {
   background-color: #ddd;
   color: black;
