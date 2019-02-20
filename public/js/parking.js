@@ -7,6 +7,8 @@ $(document).ready(function() {
 
 	var currLot = "";
 
+	$(document.getElementById("startUsing")).attr("disabled","disabled");
+
 	console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
 	console.log("condition is: " + sessionStorage.getItem("notification"));
 	// Psuedo Parking notification interval alerts
@@ -55,6 +57,7 @@ $(document).ready(function() {
 	 */
 	$(".permits li").click(function() {
 
+		var button = document.getElementById("startUsing");
 		var color = $( this ).css("background-color");
 
 		// Making a selection
@@ -68,9 +71,9 @@ $(document).ready(function() {
 			sessionStorage.setItem("permit", permitId);
 			console.log("current permit is: " + sessionStorage.getItem("permit")); 
 
-			// start using parknow button turns green
-			var button = document.getElementById("startUsing");
+			// start using parknow button turns green (clickable)
 			$(button).css("background-color", "#4CAF50");
+			$(button).removeAttr("disabled");
 
 		} else { // Deselection
 			$(this).css("background", "white");
@@ -79,10 +82,9 @@ $(document).ready(function() {
 			sessionStorage.setItem("permit", null);
 			console.log("current permit is: " + sessionStorage.getItem("permit")); 
 
-			// start using parknow button turns back to grey
-			var button = document.getElementById("startUsing");
+			// start using parknow button turns back to grey (disabled)
 			$(button).css("background-color", "#878b91");
-
+			$(button).attr("disabled", "disabled");
 		}
 	})
 
