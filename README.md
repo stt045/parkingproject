@@ -30,7 +30,7 @@ morning to guaruntee parking on campus.
 * [x] Make sure parking lot selection is consistent after traveling to different pages
 * [ ] Make sure parking alerts will still run even while on a different page
 * [x] show current permit in settings and parking page
-* [ ] Error prevention on permit page. Can continue without selection.
+* [x] Error prevention on permit page. Can continue without selection.
 * [ ] Add dummy sound feedback - JS timer 
 * [ ] Update parking spots when parking alerts go off
 * [ ] Implement Facebook Login
