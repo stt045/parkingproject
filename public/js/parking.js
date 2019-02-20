@@ -97,6 +97,8 @@ $(document).ready(function() {
 		console.log("clicked dropdown");
 		location.reload();
 	})
+
+	console.log(document.getElementById("b1").checked);
 })
 
 function initializePage() {
