@@ -15,11 +15,18 @@ $(document).ready(function() {
 	// Psuedo Parking notification interval alerts
 	if(sessionStorage.getItem("notification") == "true") { // start timer
  		// Start psuedo alert timer
- 		console.log("begin pseudo timer");
+ 		var sound = new Howl({
+			  src: ['alert.mp3']
+		});
 		setInterval(function(){ 
-			swal(sessionStorage.getItem("currLot") + " is full"); 
-			//var alertSound = new Audio("alert.mp3");
-			//alertSound.play();
+			swal({
+				  	title: "Parking Alert",
+				  	text: sessionStorage.getItem("currLot") + " is full",
+				  	icon: "warning",
+				  	dangerMode: true,
+				})
+
+			sound.play();
 		}, 3000);
 	}
 
