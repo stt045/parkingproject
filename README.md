@@ -29,7 +29,7 @@ morning to guaruntee parking on campus.
 * [ ] Fix the toggle selectors in the reminders page
 * [x] Make sure parking lot selection is consistent after traveling to different pages
 * [ ] Make sure parking alerts will still run even while on a different page
-* [ ] show current permit in settings and parking page
+* [x] show current permit in settings and parking page
 * [ ] Error prevention on permit page. Can continue without selection.
 * [ ] Add dummy sound feedback - JS timer 
 * [ ] Update parking spots when parking alerts go off
@@ -37,8 +37,8 @@ morning to guaruntee parking on campus.
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
-* [ ] Implement error prevention when trying to edit permit without having selected one yet. 
-* [ ] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
+* [x] Implement error prevention when trying to edit permit without having selected one yet. 
+* [x] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
 * [ ] Fix reminder information to display with am/pm and correct formats
 * [x] Add checkboxes to each alarm to toggle on/off
 * [ ] Make back buttons and text bigger
