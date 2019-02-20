@@ -33,6 +33,7 @@ $(document).ready(function() {
 
 	// Setting permit state
 	if(sessionStorage.getItem("permit") == "null") {
+
 		// Indicate no permit selected
 		var y = document.getElementById("parkDisplay");
 		$(y).text("no permit");
@@ -41,6 +42,7 @@ $(document).ready(function() {
 		$(".num").text("0 spots");
 
 	}else {
+
 		var permID = sessionStorage.getItem("permit");
 		var y = document.getElementById("parkDisplay");
 		$(y).text(permID);
@@ -52,6 +54,7 @@ $(document).ready(function() {
 	 * indication to the user to know which one he has selected. 
 	 */
 	$(".permits li").click(function() {
+
 		var color = $( this ).css("background-color");
 
 		// Making a selection
@@ -64,12 +67,22 @@ $(document).ready(function() {
 			var permitId = this.id;
 			sessionStorage.setItem("permit", permitId);
 			console.log("current permit is: " + sessionStorage.getItem("permit")); 
+
+			// start using parknow button turns green
+			var button = document.getElementById("startUsing");
+			$(button).css("background-color", "#4CAF50");
+
 		} else { // Deselection
 			$(this).css("background", "white");
 			$(this).css('color', 'black');
 
 			sessionStorage.setItem("permit", null);
 			console.log("current permit is: " + sessionStorage.getItem("permit")); 
+
+			// start using parknow button turns back to grey
+			var button = document.getElementById("startUsing");
+			$(button).css("background-color", "#878b91");
+
 		}
 	})
 
