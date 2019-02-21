@@ -1,4 +1,4 @@
-var logo = require("../icon_image/logo.png");
+//var logo = require("../icon_image/logo.png");
 
 /*
  * GET home page.

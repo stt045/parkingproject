@@ -10,29 +10,20 @@ $(document).ready(function() {
 	// disable start using parknow button 
 	$(document.getElementById("startUsing")).attr("disabled","disabled");
 
-	console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
-	console.log("condition is: " + sessionStorage.getItem("notification"));
+	//console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
+	//console.log("condition is: " + sessionStorage.getItem("notification"));
+	
 	// Psuedo Parking notification interval alerts
 	if(sessionStorage.getItem("notification") == "true") { // start timer
- 		// Start psuedo alert timer
- 		
- 		/*
- 		var sound = new Howl({
-			  src: ['alert.mp3']
-		});
-		*/
-		setInterval(function(){ 
-			swal({
-				  	title: "Parking Alert",
-				  	text: sessionStorage.getItem("currLot") + " is full",
-				  	icon: "warning",
-				  	dangerMode: true,
-				})
-			var sound = new Audio("alert.mp3");
-			sound.play();
-		}, 3000);
+ 		interval();
 	}
 
+	/*
+	// Pseudo Reminders Notification interval alerts
+	if(sessionStorage.getItem("enableReminder") == "true") { // start timer
+ 		console.log("reminder is on");
+	}
+	*/
 
 	// Setting parking state
 	if(sessionStorage.getItem("curr") == "null") {
@@ -112,6 +103,22 @@ $(document).ready(function() {
 		}
 		location.reload();
 	})
+
+
+	/*
+	// Toggle Reminder Switch
+	$(".onoffswitch-label").click(function() {
+		console.log("reminder is toggled");
+		
+		if(currentState == "false") {
+			currentState == "true";
+		}else {
+			currentState == "false";
+		}
+		sessionStorage.setItem("enableReminder", currentState);
+		location.reload();
+	});
+	*/
 
 	/*
 	 * When a parking area is chosen, it is logged in Session Storage and
@@ -202,6 +209,22 @@ $(document).ready(function() {
 	})
 
 })
+
+function interval() {
+	// Start psuedo alert timer
+		setInterval(function(){ 
+			swal({
+				  	title: "Parking Alert",
+				  	text: sessionStorage.getItem("currLot") + " is full",
+				  	icon: "warning",
+				  	dangerMode: true,
+				})
+
+			var sound = new Audio("sounds/alert.mp3");
+			sound.play();
+
+		}, 5000);
+}
 
 function initializePage() {
 	console.log("Javascript Connected!");

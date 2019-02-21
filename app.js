@@ -25,6 +25,12 @@ var add = require('./routes/add');
 
 var app = express();
 
+app.configure(function(){
+  	app.use('/sound', express.static(__dirname + '/sound'));
+  	//app.use(express.static(__dirname + '/public'));
+});
+
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -39,6 +45,11 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Adding route to access sounds folder
+app.use('/sounds', express.static('public'))
+
+// Adding route to access images folder
 
 // development only
 if ('development' == app.get('env')) {
