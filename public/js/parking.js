@@ -208,6 +208,64 @@ $(document).ready(function() {
 		}	
 	})
 
+		var firstTime = 1; 
+	// reminders page - delete a reminder 
+	$("#leftOption").click(function() {
+		console.log("edit/done clicked");
+			
+		var leftBtn = document.getElementById("leftOption");
+		var option = $(leftBtn).text();
+
+		var deleteBtns = document.getElementsByClassName("reminderList");
+		var span; 
+
+		if (option == "edit") {
+			console.log("toggle from edit to done");
+			$(leftBtn).text("done");
+
+			if (firstTime == 1) {
+
+				var i; 
+				for (i = 0; i < deleteBtns.length; i++) {
+				  span = document.createElement("SPAN");
+				  var txt = document.createTextNode("\u00D7");
+				  span.className = "close";
+				  span.appendChild(txt);
+				  $(span).css("position", "relative");
+				  $(span).css("top", "-138px");
+				  $(span).css("right", "5px");
+				  deleteBtns[i].appendChild(span);
+				}
+
+				var j; 
+				var close = document.getElementsByClassName("close");
+				console.log("delete:" + close.length); //TODO delete
+				for (j = 0; j < close.length; j++) {
+			  		close[j].onclick = function() {
+			   			 var div = this.parentElement;
+			  			 div.style.display = "none";
+			  		}
+				}
+
+				firstTime = 0; 
+
+			} else {
+				var btn = document.getElementsByClassName("close");
+				$(btn).css("visibility", "visible"); 	
+			}
+
+
+		} else {
+			console.log("toggle from done to edit");
+			$(leftBtn).text("edit");
+
+			var btn = document.getElementsByClassName("close");
+			$(btn).css("visibility", "hidden"); 	
+
+		} // end if else	
+
+	}) // end delete reminder / done-edit toggling 
+
 })
 
 function interval() {
@@ -232,6 +290,7 @@ function interval() {
 
 	}, 5000);
 }
+
 
 function initializePage() {
 	console.log("Javascript Connected!");
