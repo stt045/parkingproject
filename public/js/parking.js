@@ -15,9 +15,12 @@ $(document).ready(function() {
 	// Psuedo Parking notification interval alerts
 	if(sessionStorage.getItem("notification") == "true") { // start timer
  		// Start psuedo alert timer
+ 		
+ 		/*
  		var sound = new Howl({
 			  src: ['alert.mp3']
 		});
+		*/
 		setInterval(function(){ 
 			swal({
 				  	title: "Parking Alert",
@@ -25,7 +28,7 @@ $(document).ready(function() {
 				  	icon: "warning",
 				  	dangerMode: true,
 				})
-
+			var sound = new Audio("alert.mp3");
 			sound.play();
 		}, 3000);
 	}
