@@ -212,18 +212,25 @@ $(document).ready(function() {
 
 function interval() {
 	// Start psuedo alert timer
-		setInterval(function(){ 
-			swal({
-				  	title: "Parking Alert",
-				  	text: sessionStorage.getItem("currLot") + " is full",
-				  	icon: "warning",
-				  	dangerMode: true,
-				})
 
-			var sound = new Audio("sounds/alert.mp3");
-			sound.play();
+	// Change the spot count to 0
+	var num = sessionStorage.getItem("curr");
+	var x = document.getElementById(num);
 
-		}, 5000);
+	setInterval(function(){ 
+		swal({
+			  	title: "Parking Alert",
+			  	text: sessionStorage.getItem("currLot") + " is full",
+			  	icon: "warning",
+			  	dangerMode: true,
+			})
+
+		var sound = new Audio("sounds/honk.mp3");
+		sound.play();
+
+		$(x).find(".num").find(".number").text("0");
+
+	}, 5000);
 }
 
 function initializePage() {
