@@ -23,7 +23,7 @@
 
 /* PAGE FOOTER */ 
 table {
-	font-size: 18.3px;
+	font-size: 14.3px;
 	width: 100%;
 	background-color: #fdc56d;
 	background-color: #ffcb72;
@@ -38,8 +38,8 @@ th {
 	border: 2px solid black;
 	border-color: white;
 	/*border: 3px solid black;*/
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/*padding-top: 20px;*/
+	/*padding-bottom: 20px;*/
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
@@ -219,7 +219,7 @@ th {
 	position: center;
 	overflow-y: auto;
 	position: relative;
-	height: 644px;
+	height: 638px;
 
 }
 
@@ -445,6 +445,9 @@ th {
   	width: 50%;
 }
 
+.icons {
+	
+}
 
 
 
