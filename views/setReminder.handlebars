@@ -50,9 +50,72 @@
     </div>
 
     <div class="savebtn">
-			<input type="submit" id="submitBtn" class="block" value="Save"></input>
+			<input type="submit" id="submitBtn" class="block" value="Save" onclick=reminderInfo()></input>
 	</div>
 	</form>
+
+		    <script>
+	   		function reminderInfo() {
+
+	    	var i = 1
+
+	    	var monday = (document.getElementById("mon")).checked
+	    	var tuesday = (document.getElementById("tue")).checked
+	    	var wednesday = (document.getElementById("wed")).checked
+	    	var thursday = (document.getElementById("thu")).checked
+	    	var friday = (document.getElementById("fri")).checked
+
+	    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
+	    		alert("please select weekdays")
+	    	}
+
+
+			var days =[]
+	    	if (monday) {
+	    		days.push("Monday")
+	    	} 
+	    	if (tuesday) {
+	    		days.push("Tuesday")
+	    	}
+	    	if (wednesday) {
+	    		days.push("Wednesday")
+	    	}
+	    	if (thursday) {
+	    		days.push("Thursday")
+	    	}
+	    	if (friday) {
+	    		days.push("Friday")
+	    	}
+
+	    	var class_time = (document.getElementById("reminderTime")).value
+	    	var reminder_time = (document.getElementById("reminderMins")).value
+
+	    	var reminderJSON = {
+	    		"reminderTime": reminder_time,
+	    		"classTime": class_time, 
+	    		"day": days
+	    	}
+
+			//TODO: delete
+	    	//alert(class_time)
+	    	//alert(reminder_time)
+	    	//alert(days)
+
+	    	
+			/*
+	    	var fs = require("fs")
+	    	fs.writeFile("/reminders.json", JSON.stringify(reminderJSON), (err) => {
+	    		if (err) {
+	    			alert("error")
+	    			return
+	    		}
+	    		console.log("file created")
+	    	}
+	    	*/
+
+		}
+
+		</script>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
