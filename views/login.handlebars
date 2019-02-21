@@ -32,6 +32,8 @@
 
 	<!-- Login and Password Fields + Login Button -->
 	<div class="container">
+
+
     	<label for="username"><b>Username</b></label>
     	<input type="text" placeholder="Enter Username" name="username" required>
 
@@ -48,11 +50,24 @@
       		<input type="checkbox" checked="unchecked" name="remember"> Remember me
     	</label>
     	</font>
+
+    	<br/>
+    	<br/>
+    	<br/>
+    				
+    	<p class="FBLogin">or login with Facebook<br/>
+			<fb:login-button scope="public_profile, email" onlogin="checkLoginState();"></fb:login-button>
+		</p>
+
     </div>
 
     <button class="block" id="loginButton" onclick="window.location.href = 'permit';"> LOGIN</button>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+
 </body>
 </html>
