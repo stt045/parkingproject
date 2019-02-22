@@ -18,13 +18,6 @@ $(document).ready(function() {
  		interval();
 	}
 
-	/*
-	// Pseudo Reminders Notification interval alerts
-	if(sessionStorage.getItem("enableReminder") == "true") { // start timer
- 		console.log("reminder is on");
-	}
-	*/
-
 	// Setting parking state
 	if(sessionStorage.getItem("curr") == "null") {
 		// Do nothing
@@ -103,7 +96,7 @@ $(document).ready(function() {
 		}
 		location.reload();
 	})
-	
+
 	/*
 	 * When a parking area is chosen, it is logged in Session Storage and
 	 * will alert the user if the would like to receive notifications.
@@ -181,14 +174,14 @@ $(document).ready(function() {
 				  	icon: "warning",
 				  	buttons: true,
 				  	dangerMode: true,
-				})
-				.then((willDelete) => {
-				  	if (willDelete) { // Pressed OK
-				    	// Store parking lot value
-				  	} else { // Pressed Cancel
-				    	
-				  	}
-				});
+			})
+			.then((willDelete) => {
+			  	if (willDelete) { // Pressed OK
+			    	// Store parking lot value
+			  	} else { // Pressed Cancel
+			    	
+			  	}
+			});
 		}	
 	})
 
