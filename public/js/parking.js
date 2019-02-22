@@ -5,9 +5,6 @@
 $(document).ready(function() {
 	initializePage();
 
-	//TODO: psuedoReminders
-	psuedoReminders();
-
 	var currLot = "";
 
 	// disable start using parknow button 
@@ -106,23 +103,7 @@ $(document).ready(function() {
 		}
 		location.reload();
 	})
-
-
-	/*
-	// Toggle Reminder Switch
-	$(".onoffswitch-label").click(function() {
-		console.log("reminder is toggled");
-		
-		if(currentState == "false") {
-			currentState == "true";
-		}else {
-			currentState == "false";
-		}
-		sessionStorage.setItem("enableReminder", currentState);
-		location.reload();
-	});
-	*/
-
+	
 	/*
 	 * When a parking area is chosen, it is logged in Session Storage and
 	 * will alert the user if the would like to receive notifications.
@@ -295,27 +276,6 @@ function interval() {
 		$(x).find(".num").find(".number").text("0");
 
 	}, 5000);
-}
-
-function psuedoReminders() {
-	//generate random number between 10 and 20 seconds 
-	var num = Math.floor((Math.random() *10 ) + 1) + 10; 
-	num = num * 1000; 
-
-	console.log(num); 
-
-	setInterval(function(){ 
-		swal({
-			  	title: "Reminder",
-			  	text: "Time to leave for class",
-			  	icon: "warning",
-			  	dangerMode: true,
-			})
-
-		var sound = new Audio("sounds/alert.mp3");
-		sound.play();
-	}, num);
-
 }
 
 function initializePage() {
