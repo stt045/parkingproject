@@ -44,8 +44,9 @@
 		  <label for="thu">Th</label>
 		  <input type="checkbox" id="fri" class="weekday" name="fri"/>
 		  <label for="fri">F</label>
-
 		</div>
+
+		<input type="hidden" id="getWeekdays" value="" name="day" required> 
 
     </div>
 
@@ -69,7 +70,26 @@
 	    		alert("please select weekdays")
 	    	}
 
-
+	    	var days =""
+	    	if (monday) {
+	    		days+= "Monday "
+	    	} 
+	    	if (tuesday) {
+	    		days += "Tuesday "
+	    	}
+	    	if (wednesday) {
+	    		days += "Wednesday "
+	    	}
+	    	if (thursday) {
+	    		days += "Thursday "
+	    	}
+	    	if (friday) {
+	    		days += "Friday"
+	    	}
+	    	var x = (document.getElementById("getWeekdays"))
+	    	x.value = days
+	    		
+	    	/*
 			var days =[]
 	    	if (monday) {
 	    		days.push("Monday")
@@ -86,15 +106,18 @@
 	    	if (friday) {
 	    		days.push("Friday")
 	    	}
+			*/
 
-	    	var class_time = (document.getElementById("reminderTime")).value
-	    	var reminder_time = (document.getElementById("reminderMins")).value
+	    	//var class_time = (document.getElementById("reminderTime")).value
+	    	//var reminder_time = (document.getElementById("reminderMins")).value
 
+	    	/*
 	    	var reminderJSON = {
 	    		"reminderTime": reminder_time,
 	    		"classTime": class_time, 
 	    		"day": days
 	    	}
+	    	*/
 
 			//TODO: delete
 	    	//alert(class_time)
