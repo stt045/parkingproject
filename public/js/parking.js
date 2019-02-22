@@ -5,6 +5,9 @@
 $(document).ready(function() {
 	initializePage();
 
+	//TODO: psuedoReminders
+	psuedoReminders();
+
 	var currLot = "";
 
 	// disable start using parknow button 
@@ -208,7 +211,7 @@ $(document).ready(function() {
 		}	
 	})
 
-		var firstTime = 1; 
+	var firstTime = 1; 
 	// reminders page - delete a reminder 
 	$("#leftOption").click(function() {
 		console.log("edit/done clicked");
@@ -219,6 +222,8 @@ $(document).ready(function() {
 		var deleteBtns = document.getElementsByClassName("reminderList");
 		var span; 
 
+
+
 		if (option == "edit") {
 			console.log("toggle from edit to done");
 			$(leftBtn).text("done");
@@ -226,7 +231,7 @@ $(document).ready(function() {
 			if (firstTime == 1) {
 
 				var i; 
-				for (i = 0; i < deleteBtns.length; i++) {
+				for (i = 1; i < deleteBtns.length; i++) {
 				  span = document.createElement("SPAN");
 				  var txt = document.createTextNode("\u00D7");
 				  span.className = "close";
@@ -234,6 +239,7 @@ $(document).ready(function() {
 				  $(span).css("position", "relative");
 				  $(span).css("top", "-138px");
 				  $(span).css("right", "5px");
+
 				  deleteBtns[i].appendChild(span);
 				}
 
@@ -291,6 +297,26 @@ function interval() {
 	}, 5000);
 }
 
+function psuedoReminders() {
+	//generate random number between 10 and 20 seconds 
+	var num = Math.floor((Math.random() *10 ) + 1) + 10; 
+	num = num * 1000; 
+
+	console.log(num); 
+
+	setInterval(function(){ 
+		swal({
+			  	title: "Reminder",
+			  	text: "Time to leave for class",
+			  	icon: "warning",
+			  	dangerMode: true,
+			})
+
+		var sound = new Audio("sounds/alert.mp3");
+		sound.play();
+	}, num);
+
+}
 
 function initializePage() {
 	console.log("Javascript Connected!");
