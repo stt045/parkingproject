@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Reminders Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parking.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="screen">
+	<div class="header">	
+		<div>
+			<a href="setReminder" id="rightOption"><button> add </button></a>
+			<button id="leftOption">edit</button></a> 
+		<h2>Reminders</h2>
+		</div>
+	</div>
+
+	<div class="message">
+		Reminds you X minutes before you need to leave
+	</div>	
+
+	<div id="reminderDiv">
+		<!-- Dynamically Listing all of our current reminders -->
+		<ul class="list-unstyled reminderList">
+		{{#each reminders}}
+			<li class="reminderList">
+
+
+				<div>
+					<p style="font-size:14px;"> Remind me {{reminderTime}} mins before I have to leave</p>
+					<p> Class Time: {{classTime}} </p>
+					<p> Day: {{day}} </p>
+				</div>	
+			
+				<div class="onoffswitch">
+				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
+				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
+				        <span class="onoffswitch-inner"></span>
+				        <span class="onoffswitch-switch"></span>
+				    </label>
+				</div>
+				
+			</li>
+		{{/each}}		
+		</ul>	
+	</div>
+
+
+	<!-- FOOTER -->
+	<table>
+		<tr>
+			<th bgcolor="white">
+				<a href="parking">
+					<img src="images/parking.png" id="appLogo" style="width:50px;height:50px;">
+				</a>	
+				<form action="parking">
+					<input type="submit" value="Parking" />
+				</form>
+			</th>
+			<th bgcolor="white">
+				<img src="images/reminding_select.png" id="appLogo" style="width:50px;height:50px;">
+				<form action="reminders">
+					<input type="submit" value="Reminders" />
+				</form>
+			</th>
+			<th bgcolor="white">
+				<a href="settings">
+					<img src="images/setting.png" id="appLogo" style="width:50px;height:50px;">
+				</a>	
+				<form action="settings">
+					<input type="submit" value="Settings" />
+				</form>
+			</th>
+		</tr>	
+	</table>		
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html> 

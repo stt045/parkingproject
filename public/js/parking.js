@@ -189,6 +189,8 @@ $(document).ready(function() {
 	// reminders page - delete a reminder 
 	$("#leftOption").click(function() {
 		console.log("edit/done clicked");
+
+		
 			
 		var leftBtn = document.getElementById("leftOption");
 		var option = $(leftBtn).text();
