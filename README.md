@@ -22,25 +22,14 @@ morning to guaruntee parking on campus.
 
 **TO DO**
 * [ ] Create the alert for the reminder notifications
-* [x] Create the alert for the parking notifications
-* [x] Create the actual parking notification update
 * [ ] Come up with specific text for the reminder screen
-* [x] Add sound for notifications
-* [x] Fix the toggle selectors in the reminders page
-* [x] Make sure parking lot selection is consistent after traveling to different pages
-* [x] Make sure parking alerts will still run even while on a different page
-* [x] show current permit in settings and parking page
-* [x] Error prevention on permit page. Can continue without selection.
-* [x] Add dummy sound feedback - JS intervals
 * [ ] Update parking spots when parking alerts go off
-* [x] Implement Facebook Login
+* [ ] Make reminders actually go away when you edit reminders and go to a different page
+* [ ] Add an actual alarm feature to the application
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
-* [x] Implement error prevention when trying to edit permit without having selected one yet. 
-* [x] Help/Welcome screen needs to differentiate the usage of reminders and parking notifications as 2 features
 * [ ] Fix reminder information to display with am/pm and correct formats
-* [x] Add checkboxes to each alarm to toggle on/off
 * [ ] Make back buttons and text bigger
 
 
