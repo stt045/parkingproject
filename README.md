@@ -26,6 +26,8 @@ morning to guaruntee parking on campus.
 * [ ] Update parking spots when parking alerts go off
 * [ ] Make reminders actually go away when you edit reminders and go to a different page
 * [ ] Add an actual alarm feature to the application
+* [ ] Fix Facebook login
+* [ ] Fix scrolling on select permit page
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
