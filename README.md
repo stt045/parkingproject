@@ -28,6 +28,7 @@ morning to guaruntee parking on campus.
 * [ ] Add an actual alarm feature to the application
 * [ ] Fix Facebook login
 * [ ] Fix scrolling on select permit page
+* [ ] Make sure turning on reminders works correctly
 
 **OPTIONAL THINGS TO IMPLEMENT**
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
