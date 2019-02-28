@@ -263,7 +263,7 @@ function interval() {
 		numElement.text("0");
 		sessionStorage.setItem($(numElement).attr("id"), "0");
 
-	}, 4000);
+	}, 10000);
 }
 
 function initializePage() {
