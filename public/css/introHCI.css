@@ -53,6 +53,7 @@ th {
 	/*background-color: #cce5ff;*/
 	background-color: #f4eada;
 	overflow-y: auto;
+	height: 63vh;
 }
 
 .options li {
@@ -63,7 +64,6 @@ th {
 	padding: 20px;
 	background-color: white;
 	box-shadow: 5px 3px 3px #9b9b9b;
-	height: 650px;
 	position: relative;
 }
 
