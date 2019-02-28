@@ -53,7 +53,7 @@ th {
 	/*background-color: #cce5ff;*/
 	background-color: #f4eada;
 	overflow-y: auto;
-	height: 63vh;
+	height: 65vh;
 }
 
 .options li {
@@ -98,10 +98,7 @@ th {
 	border-radius: 20px;
 	text-align: center;
 	font-size: 15px;
-	/*padding-top: 25px;*/
-	/*background-color:#fdc56d;*/
-	/*margin-top: : 10px;*/
-	margin-top: 25px;
+	margin-top: 10px;
 	background-color: white;
 	position: sticky;
 }

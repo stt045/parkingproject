@@ -254,6 +254,14 @@ $(document).ready(function() {
 		} // end if else	
 	}) // end delete reminder / done-edit toggling 
 
+	$("#help").click(function() {
+		window.location.href = "help";
+	});
+
+	$("#logout").click(function() {
+		window.location.href = "login";
+	});
+
 })
 
 function interval() {
