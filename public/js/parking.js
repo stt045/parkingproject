@@ -10,9 +10,6 @@ $(document).ready(function() {
 	// disable start using parknow button 
 	$(document.getElementById("startUsing")).attr("disabled","disabled");
 
-	//console.log("curr session is: " + sessionStorage.getItem("curr")); // delete
-	//console.log("condition is: " + sessionStorage.getItem("notification"));
-	
 	// Psuedo Parking notification interval alerts
 	if(sessionStorage.getItem("notification") == "true") { // start timer
  		interval();
@@ -54,7 +51,6 @@ $(document).ready(function() {
 		console.log("on/off clicked");
 		sessionStorage.setItem(this.id, this.checked);
 	});
-
 
 	/*
 	 * This function highlights the permit the user selects. This is an 
@@ -228,6 +224,8 @@ $(document).ready(function() {
 			  		close[j].onclick = function() {
 			   			 var div = this.parentElement;
 			  			 div.style.display = "none";
+			  			 console.log("deleting reminder: " + $(div).attr("id"));
+			  			 sessionStorage.setItem($(div).attr("id"), "none");
 			  		}
 				}
 				firstTime = 0; 
@@ -247,9 +245,6 @@ $(document).ready(function() {
 })
 
 function interval() {
-	// Start psuedo alert timer
-
-	// Change the spot count to 0
 	var num = sessionStorage.getItem("curr"); // num holds the id
 	var x = document.getElementById(num); // x holds the actual element
 

@@ -32,7 +32,7 @@
 		<!-- Dynamically Listing all of our current reminders -->
 		<ul class="list-unstyled reminderList">
 		{{#each reminders}}
-			<li class="reminderList">
+			<li class="reminderList" id="list{{@index}}">
 
 
 				<div>
@@ -85,6 +85,44 @@
 	</table>		
 
 	<script>
+		if(sessionStorage.getItem("list0") == "none") {
+			var list0 = document.getElementById("list0");
+			list0.style.display = "none";
+		}
+		if(sessionStorage.getItem("list1") == "none") {
+			var list1 = document.getElementById("list1");
+			list1.style.display = "none";
+		}
+		if(sessionStorage.getItem("list2") == "none") {
+			var list2 = document.getElementById("list2");
+			list2.style.display = "none";
+		}
+		if(sessionStorage.getItem("list3") == "none") {
+			var list3 = document.getElementById("list3");
+			list3.style.display = "none";
+		}
+		if(sessionStorage.getItem("list4") == "none") {
+			var list4 = document.getElementById("list4");
+			list4.style.display = "none";
+		}
+		if(sessionStorage.getItem("list5") == "none") {
+			var list5 = document.getElementById("list5");
+			list5.style.display = "none";
+		}
+		if(sessionStorage.getItem("list6") == "none") {
+			var list6 = document.getElementById("list6");
+			list6.style.display = "none";
+		}
+		if(sessionStorage.getItem("list7") == "none") {
+			var list7 = document.getElementById("list7");
+			list7.style.display = "none";
+		}
+		if(sessionStorage.getItem("list8") == "none") {
+			var list8 = document.getElementById("list8");
+			list8.style.display = "none";
+		}
+
+
 		if(sessionStorage.getItem("myonoffswitch0") == "true") {
 			var switch0 = document.getElementById("myonoffswitch0");
 			switch0.checked = true;
