@@ -34,5 +34,6 @@ morning to guaruntee parking on campus.
 * [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
 * [ ] Fix reminder information to display with am/pm and correct formats
 * [ ] Make back buttons and text bigger
+* [ ] Be able to edit the time in the reminders
 
 
