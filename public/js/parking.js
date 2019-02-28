@@ -6,7 +6,6 @@ $(document).ready(function() {
 	initializePage();
 
 	var currLot = "";
-	
 
 	// disable start using parknow button 
 	$(document.getElementById("startUsing")).attr("disabled","disabled");
@@ -53,8 +52,6 @@ $(document).ready(function() {
 	 */
 	$(".reminderList input").click(function() {
 		console.log("on/off clicked");
-		console.log(this.checked);
-		console.log(this.id);
 		sessionStorage.setItem(this.id, this.checked);
 	});
 
@@ -162,7 +159,6 @@ $(document).ready(function() {
 						$(this).css('color', 'black');
 						sessionStorage.setItem("curr", null);
 						console.log("curr session is: " + sessionStorage.getItem("curr"));
-
 						location.reload();
 				  	}
 				});
@@ -176,7 +172,6 @@ $(document).ready(function() {
 				sessionStorage.setItem("notification", "false");
 				console.log("parking interval off");
 				location.reload();
-				
 			}
 		}else { // Permit is null
 			// Alert user to select permit in settings
@@ -255,10 +250,10 @@ function interval() {
 	// Start psuedo alert timer
 
 	// Change the spot count to 0
-	var num = sessionStorage.getItem("curr");
-	var x = document.getElementById(num);
+	var num = sessionStorage.getItem("curr"); // num holds the id
+	var x = document.getElementById(num); // x holds the actual element
 
-	setInterval(function(){ 
+	var myTimer = setInterval(function(){ 
 		swal({
 			  	title: "Parking Alert",
 			  	text: sessionStorage.getItem("currLot") + " is full",
@@ -269,9 +264,11 @@ function interval() {
 		var sound = new Audio("sounds/honk.mp3");
 		sound.play();
 
-		$(x).find(".num").find(".number").text("0");
+		var numElement = $(x).find(".number");
+		numElement.text("0");
+		sessionStorage.setItem($(numElement).attr("id"), "0");
 
-	}, 5000);
+	}, 4000);
 }
 
 function initializePage() {
