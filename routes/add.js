@@ -8,6 +8,7 @@ exports.addReminder = function(req, res) { 
 		"day": req.query.day
 	};
 	
+	console.log(req.query.time);
 	data.reminders.push(newReminder);
 	console.log(newReminder);
 	res.render('reminders', data);

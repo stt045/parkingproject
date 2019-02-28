@@ -6,6 +6,7 @@ $(document).ready(function() {
 	initializePage();
 
 	var currLot = "";
+	
 
 	// disable start using parknow button 
 	$(document.getElementById("startUsing")).attr("disabled","disabled");
@@ -46,12 +47,23 @@ $(document).ready(function() {
 		console.log("permID: " + permID);
 	}
 
+
+	/*
+	 * Function that runs with reminders get toggeled on/off
+	 */
+	$(".reminderList input").click(function() {
+		console.log("on/off clicked");
+		console.log(this.checked);
+		console.log(this.id);
+		sessionStorage.setItem(this.id, this.checked);
+	});
+
+
 	/*
 	 * This function highlights the permit the user selects. This is an 
 	 * indication to the user to know which one he has selected. 
 	 */
 	$(".permits li").click(function() {
-
 		var button = document.getElementById("startUsing");
 		var color = $( this ).css("background-color");
 
@@ -189,23 +201,18 @@ $(document).ready(function() {
 	// reminders page - delete a reminder 
 	$("#leftOption").click(function() {
 		console.log("edit/done clicked");
-
-		
-			
+	
 		var leftBtn = document.getElementById("leftOption");
 		var option = $(leftBtn).text();
 
 		var deleteBtns = document.getElementsByClassName("reminderList");
 		var span; 
 
-
-
 		if (option == "edit") {
 			console.log("toggle from edit to done");
 			$(leftBtn).text("done");
 
 			if (firstTime == 1) {
-
 				var i; 
 				for (i = 1; i < deleteBtns.length; i++) {
 				  span = document.createElement("SPAN");
@@ -228,24 +235,18 @@ $(document).ready(function() {
 			  			 div.style.display = "none";
 			  		}
 				}
-
 				firstTime = 0; 
-
 			} else {
 				var btn = document.getElementsByClassName("close");
 				$(btn).css("visibility", "visible"); 	
 			}
-
-
 		} else {
 			console.log("toggle from done to edit");
 			$(leftBtn).text("edit");
 
 			var btn = document.getElementsByClassName("close");
 			$(btn).css("visibility", "hidden"); 	
-
 		} // end if else	
-
 	}) // end delete reminder / done-edit toggling 
 
 })

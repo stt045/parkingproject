@@ -31,7 +31,6 @@ table {
 	position: absolute;
 	position: sticky;
 	bottom: 0;
-	opacity: 0.95;
 }
 
 th {
@@ -47,7 +46,8 @@ th {
 
 /* PARKING OPTIONS */
 .options {
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-size: 30px;
 	position: center;
 	/*background-color: #cce5ff;*/
@@ -262,6 +262,9 @@ th {
 .parkStyle2 { /* Permit visibility on parking page*/
 	font-size: 20px;
 	font-weight: bold;
+	border: 1px solid black;
+	width: 200px;
+	margin: 0 auto;
 }
 
 #buttons {

@@ -22,9 +22,11 @@
 		</div>
 	</div>
 
+	<!--
 	<div class="message">
 		Reminds you X minutes before you need to leave
-	</div>	
+	</div>
+	-->	
 
 	<div id="reminderDiv">
 		<!-- Dynamically Listing all of our current reminders -->
@@ -41,6 +43,7 @@
 			
 				<div class="onoffswitch">
 				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
+
 				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
 				        <span class="onoffswitch-inner"></span>
 				        <span class="onoffswitch-switch"></span>
@@ -81,6 +84,80 @@
 		</tr>	
 	</table>		
 
+	<script>
+		if(sessionStorage.getItem("myonoffswitch0") == "true") {
+			var switch0 = document.getElementById("myonoffswitch0");
+			switch0.checked = true;
+			console.log("0 is true");
+		}else {
+			var switch0 = document.getElementById("myonoffswitch1");
+			switch0.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch1") == "true") {
+			var switch0 = document.getElementById("myonoffswitch1");
+			switch1.checked = true;
+			console.log("1 is true");
+		}else {
+			var switch1 = document.getElementById("myonoffswitch1");
+			switch1.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch2") == "true") {
+			var switch0 = document.getElementById("myonoffswitch2");
+			switch0.checked = true;
+			console.log("2 is true");
+		}else {
+			var switch2 = document.getElementById("myonoffswitch1");
+			switch2.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch3") == "true") {
+			var switch0 = document.getElementById("myonoffswitch3");
+			switch0.checked = true;
+			console.log("3 is true");
+		}else {
+			var switch3 = document.getElementById("myonoffswitch1");
+			switch3.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch4") == "true") {
+			var switch0 = document.getElementById("myonoffswitch4");
+			switch0.checked = true;
+			console.log("4 is true");
+		}else {
+			var switch4 = document.getElementById("myonoffswitch1");
+			switch4.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch5") == "true") {
+			var switch0 = document.getElementById("myonoffswitch5");
+			switch0.checked = true;
+			console.log("5 is true");
+		}else {
+			var switch5 = document.getElementById("myonoffswitch1");
+			switch5.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch6") == "true") {
+			var switch0 = document.getElementById("myonoffswitch6");
+			switch0.checked = true;
+			console.log("6 is true");
+		}else {
+			var switch6 = document.getElementById("myonoffswitch1");
+			switch6.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch7") == "true") {
+			var switch0 = document.getElementById("myonoffswitch7");
+			switch0.checked = true;
+			console.log("7 is true");
+		}else {
+			var switch7 = document.getElementById("myonoffswitch1");
+			switch7.checked = false;
+		}
+		if(sessionStorage.getItem("myonoffswitch8") == "true") {
+			var switch0 = document.getElementById("myonoffswitch8");
+			switch0.checked = true;
+			console.log("8 is true");
+		}else {
+			var switch8 = document.getElementById("myonoffswitch1");
+			switch8.checked = false;
+		}
+	</script>	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>
