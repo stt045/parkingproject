@@ -3,27 +3,27 @@
 		{
 			"reminderTime": "20",
 			"classTime": "8:00am",
-			"day": "Monday"
+			"day": "M"
 		},
 		{
 			"reminderTime": "20",
 			"classTime": "9:30am",
-			"day": "Tuesday"
+			"day": "Tu"
 		},
 		{
 			"reminderTime": "25",
 			"classTime": "8:00am",
-			"day": "Wednesday"
+			"day": "W"
 		},
 		{
 			"reminderTime": "30",
 			"classTime": "9:30am",
-			"day": "Thursday"
+			"day": "Th"
 		},
 		{
 			"reminderTime": "10",
 			"classTime": "8:00am",
-			"day": "Friday"
+			"day": "F"
 		}
 	]
 }
