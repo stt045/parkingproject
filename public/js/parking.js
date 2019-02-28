@@ -50,6 +50,18 @@ $(document).ready(function() {
 	$(".reminderList input").click(function() {
 		console.log("on/off clicked");
 		sessionStorage.setItem(this.id, this.checked);
+		var timerVar;
+		var randTime = parseInt(Math.random() * 100000);
+
+		console.log("checked is: " + this.checked);
+
+		if(this.checked == true) {
+			console.log("timeout set to: " + randTime);
+			timerVar = setTimeout(alarm, randTime);
+		}else {
+			console.log("Clearing Time out");
+			clearTimeout(timerVar);
+		}
 	});
 
 	/*
@@ -264,6 +276,27 @@ function interval() {
 		sessionStorage.setItem($(numElement).attr("id"), "0");
 
 	}, 10000);
+}
+
+/*
+ * The alarm will pop up an alert to wake up the user and prompt them to move to the 
+ * parking page to turn on alerts for a parking lot of their choice.
+ */
+function alarm() {
+	swal({
+	  	title: "Wake Up!",
+	  	text: "Proceed to parking information?",
+	  	icon: "info",
+	  	buttons: true,
+	})
+	.then((willDelete) => {
+	  	if (willDelete) { // Pressed OK
+	    	console.log("proceed to parking page");
+	    	window.location.href = "parking";
+	  	} else { // Pressed Cancel
+			console.log("do not proceed to parking page");
+	  	}
+	});
 }
 
 function initializePage() {
