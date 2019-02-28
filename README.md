@@ -23,7 +23,7 @@ morning to guaruntee parking on campus.
 **TO DO**
 * [ ] Create the alert for the reminder notifications
 * [ ] Come up with specific text for the reminder screen
-* [ ] Update parking spots when parking alerts go off
+* [x] Update parking spots when parking alerts go off
 * [ ] Make reminders actually go away when you edit reminders and go to a different page
 * [ ] Add an actual alarm feature to the application
 * [ ] Fix Facebook login
