@@ -66,6 +66,7 @@ app.get('/welcome', welcome.view);
 app.get('/help', help.view);
 app.get('/permit', permit.view);
 app.get('/add', add.addReminder);
+app.get('/viewAlt', reminders.viewAlt);
 
 
 

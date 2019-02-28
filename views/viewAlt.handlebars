@@ -18,35 +18,35 @@
 		<div>
 			<a href="setReminder" id="rightOption"><button> add </button></a>
 			<button id="leftOption">edit</button></a> 
-		<h2>Reminders</h2>
+		<h2>Alarms</h2>
 		</div>
 	</div>
 
+	<!--
 	<div class="message">
 		Reminds you X minutes before you need to leave
-	</div>	
+	</div>
+	-->	
 
-	<div id="reminderDiv">
+	<div id="reminderDivB">
 		<!-- Dynamically Listing all of our current reminders -->
-		<ul class="list-unstyled reminderList">
+		<ul class="list-unstyled reminderListB">
 		{{#each reminders}}
-			<li class="reminderList">
+			<li class="reminderListB">
 
-
-				<div>
-					<p style="font-size:14px;"> Remind me {{reminderTime}} mins before I have to leave</p>
-					<p> Class Time: {{classTime}} </p>
-					<p> Day: {{day}} </p>
+				<div class="alarmContent">
+					<p class="timeDisplay"> {{classTime}} </p>
+					<p> {{day}} </p>
 				</div>	
 			
-				<div class="onoffswitch">
+				<div class="onoffswitch switchB">
 				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
 				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
 				        <span class="onoffswitch-inner"></span>
 				        <span class="onoffswitch-switch"></span>
 				    </label>
 				</div>
-				
+
 			</li>
 		{{/each}}		
 		</ul>	
@@ -67,7 +67,7 @@
 			<th bgcolor="white">
 				<img src="images/reminding_select.png" id="appLogo" style="width:50px;height:50px;">
 				<form action="reminders">
-					<input type="submit" value="Reminders" />
+					<input type="submit" value="Alarms" />
 				</form>
 			</th>
 			<th bgcolor="white">

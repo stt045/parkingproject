@@ -28,8 +28,10 @@ table {
 	background-color: #fdc56d;
 	background-color: #ffcb72;
 	z-index: 1;
+	position: absolute;
 	position: sticky;
 	bottom: 0;
+	opacity: 0.95;
 }
 
 th {
@@ -37,9 +39,6 @@ th {
 	border-color: white;
 	border: 2px solid black;
 	border-color: white;
-	/*border: 3px solid black;*/
-	/*padding-top: 20px;*/
-	/*padding-bottom: 20px;*/
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
@@ -453,9 +452,39 @@ th {
 	
 }
 
+/* viewAlt design for A/B Testing */
+.timeDisplay {
+	font-size: 35px;
+	padding-top: 20px;
+}
 
+.alarmContent {
+	margin-left: 20px
+}
 
+#reminderDivB {
+	height: 77vh;
+	overflow-y: auto;
+}
 
+.reminderListB {
+	position: center;
+	font-size: 18px;
+}
+
+.reminderListB li {
+	border-radius: 10px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.switchB {
+	/*border: 1px solid black;*/
+}
 
 
 
