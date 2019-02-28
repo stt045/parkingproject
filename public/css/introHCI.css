@@ -29,7 +29,7 @@ table {
 	background-color: #ffcb72;
 	z-index: 1;
 	position: absolute;
-	position: sticky;
+	
 	bottom: 0;
 }
 
@@ -286,7 +286,7 @@ th {
 
 /* REMINDERS PAGE */
 #reminderDiv {
-	height: 660px;
+	height: 77vh;
 	overflow-y: auto;
 	position: relative;
 }
