@@ -466,9 +466,11 @@ th {
 }
 
 .remove_mobile {
+	/*
 	-webkit-appearance: none;
 	outline: none;
-
+	border: none;
+	*/
 }
 
 
