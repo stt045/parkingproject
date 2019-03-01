@@ -31,12 +31,10 @@ $(document).ready(function() {
 		// Indicate no permit selected
 		var y = document.getElementById("parkDisplay");
 		$(y).text("no permit");
-
 		// if no permit is selected, all spots should zero out
 		$(".num").text("0 spots");
 
 	}else {
-
 		var permID = sessionStorage.getItem("permit");
 		var y = document.getElementById("parkDisplay");
 		$(y).text(permID);
