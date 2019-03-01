@@ -10,12 +10,8 @@
 	top: 0;
 	position: sticky;
 	text-align: center;
-	border: 2px solid;
 	border-color: #fdc56c;
-	/*background-color: white;*/
 	background-color: #ffcb72;
-	/*background-color: #cce5ff;*/
-	background-color:#fdc56d;
 	padding-top: 15px;
 	padding-bottom: 10px;
 	z-index: 1;
@@ -29,15 +25,11 @@ table {
 	background-color: #ffcb72;
 	z-index: 1;
 	position: absolute;
-	
 	bottom: 0;
 }
 
 th {
-	border: 2px solid black;
-	border-color: white;
-	border: 2px solid black;
-	border-color: white;
+	border: 2px solid white;
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
@@ -50,18 +42,14 @@ th {
 	padding-right: 20px;
 	font-size: 30px;
 	position: center;
-	/*background-color: #cce5ff;*/
 	background-color: #f4eada;
 	overflow-y: auto;
 	height: 65vh;
 }
 
 .options li {
-	/*background-color: #cce5ff;*/
 	border-radius: 10px;
 	border: 2px white;
-	margin: 10px;
-	padding: 20px;
 	background-color: white;
 	box-shadow: 5px 3px 3px #9b9b9b;
 	position: relative;
@@ -89,7 +77,6 @@ th {
 }
 
 .spot {
-	/*border: 1px solid black;*/
 	font-size: 18px;
 	float:right;
 }
@@ -201,7 +188,6 @@ th {
 }
 /* login vai TritonLink page */
 .container {
-	/*background-color: #cce5ff;*/
 	margin-top: 200px;
 	vertical-align: 0;
 	text-align: center;
@@ -289,7 +275,6 @@ th {
 }
 
 .reminderList {
-	/*padding: 15px;*/
 	position: center;
 	font-size: 18px;
 }
@@ -448,10 +433,6 @@ th {
   	width: 50%;
 }
 
-.icons {
-	
-}
-
 /* viewAlt design for A/B Testing */
 .timeDisplay {
 	font-size: 35px;
@@ -480,10 +461,6 @@ th {
 	margin-bottom: 10px;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
-}
-
-.switchB {
-	/*border: 1px solid black;*/
 }
 
 
