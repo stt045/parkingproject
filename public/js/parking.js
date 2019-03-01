@@ -267,6 +267,9 @@ $(document).ready(function() {
 function interval() {
 	var num = sessionStorage.getItem("curr"); // num holds the id
 	var x = document.getElementById(num); // x holds the actual element
+	
+	var numElement1 = $(x).find(".number");
+	sessionStorage.setItem($(numElement1).attr("id"), "0");
 
 	var myTimer = setInterval(function(){ 
 		swal({
@@ -279,9 +282,9 @@ function interval() {
 		var sound = new Audio("sounds/honk.mp3");
 		sound.play();
 
-		var numElement = $(x).find(".number");
-		numElement.text("0");
-		sessionStorage.setItem($(numElement).attr("id"), "0");
+		var numElement2 = $(x).find(".number");
+		numElement2.text("0");
+		
 
 	}, 10000);
 }
