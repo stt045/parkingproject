@@ -42,6 +42,14 @@ $(document).ready(function() {
 	}
 
 
+	/* For Google Analytics */
+	$(".onoffswitch").click(function(e) {
+		//e.preventDefault();
+		ga('create', 'UA-134918054-1', 'auto');
+		ga("send", "event", 'toggle', 'click');
+	});
+
+
 	/*
 	 * Function that runs with reminders get toggeled on/off
 	 */

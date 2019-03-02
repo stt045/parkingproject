@@ -10,5 +10,5 @@ exports.view = function(req, res){
 
 exports.viewAlt = function(req, res){
 	data["viewAlt"] = true;
-  	res.render('viewAlt', data);
+  	res.render('reminders', data);
 };
