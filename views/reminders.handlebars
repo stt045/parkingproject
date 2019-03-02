@@ -31,34 +31,43 @@
 		<div>
 			<a href="setReminder" id="rightOption"><button class="remove_mobile"> add </button></a>
 			<button id="leftOption" class="remove_mobile">edit</button></a> 
-		<h2>Reminders</h2>
+		{{#if viewAlt}}
+			<!-- Add the alternate view here -->
+			<h2> Alarms </h2>
+		{{else}}
+			<h2>Reminders</h2>
+		{{/if}}	
 		</div>
 	</div>	
 
 	<div id="reminderDiv">
 		<!-- Dynamically Listing all of our current reminders -->
 		<ul class="list-unstyled reminderList">
-		{{#each reminders}}
-			<li class="reminderList" id="list{{@index}}">
+		{{#if viewAlt}}
+			<!-- Add the alternate view here -->
+		{{else}}	
+			{{#each reminders}}
+				<li class="reminderList" id="list{{@index}}">
 
 
-				<div>
-					<p style="font-size:14px;"> Remind me {{reminderTime}} mins before I have to leave</p>
-					<p> Class Time: {{classTime}} </p>
-					<p> Days: {{day}} </p>
-				</div>	
-			
-				<div class="onoffswitch">
-				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
-
-				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
-				        <span class="onoffswitch-inner"></span>
-				        <span class="onoffswitch-switch"></span>
-				    </label>
-				</div>
+					<div>
+						<p style="font-size:14px;"> Remind me {{reminderTime}} mins before I have to leave</p>
+						<p> Class Time: {{classTime}} </p>
+						<p> Days: {{day}} </p>
+					</div>	
 				
-			</li>
-		{{/each}}		
+					<div class="onoffswitch">
+					    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
+
+					    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
+					        <span class="onoffswitch-inner"></span>
+					        <span class="onoffswitch-switch"></span>
+					    </label>
+					</div>
+					
+				</li>
+			{{/each}}
+		{{/if}}	
 		</ul>	
 	</div>
 
