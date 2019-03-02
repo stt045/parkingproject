@@ -242,6 +242,7 @@ $(document).ready(function() {
 			  		close[j].onclick = function() {
 			   			 var div = this.parentElement;
 			  			 div.style.display = "none";
+			  			 
 			  			 console.log("deleting reminder: " + $(div).attr("id"));
 			  			 sessionStorage.setItem($(div).attr("id"), "none");
 			  		}
