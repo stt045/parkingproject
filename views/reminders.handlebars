@@ -40,16 +40,35 @@
 		</div>
 	</div>	
 
+	{{#if viewAlt}}
+		<!-- Add the alternate view here -->
+		<div id="reminderDivB">
+		<!-- Dynamically Listing all of our current reminders -->
+		<ul class="list-unstyled reminderListB">
+		{{#each reminders}}
+			<li class="reminderListB">
+				<div class="alarmContent">
+					<p class="timeDisplay"> {{classTime}} </p>
+					<p> {{day}} </p>
+				</div>	
+			
+				<div class="onoffswitch switchB">
+				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
+				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
+				        <span class="onoffswitch-inner"></span>
+				        <span class="onoffswitch-switch"></span>
+				    </label>
+				</div>
+			</li>
+		{{/each}}		
+		</ul>	
+		</div>
+	{{else}}		
 	<div id="reminderDiv">
 		<!-- Dynamically Listing all of our current reminders -->
-		<ul class="list-unstyled reminderList">
-		{{#if viewAlt}}
-			<!-- Add the alternate view here -->
-		{{else}}	
+		<ul class="list-unstyled reminderList">	
 			{{#each reminders}}
 				<li class="reminderList" id="list{{@index}}">
-
-
 					<div>
 						<p style="font-size:14px;"> Remind me {{reminderTime}} mins before I have to leave</p>
 						<p> Class Time: {{classTime}} </p>
@@ -64,12 +83,11 @@
 					        <span class="onoffswitch-switch"></span>
 					    </label>
 					</div>
-					
 				</li>
 			{{/each}}
-		{{/if}}	
 		</ul>	
 	</div>
+	{{/if}}	
 
 
 	<!-- FOOTER -->
