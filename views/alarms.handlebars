@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Reminders Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parking.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-134918054-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+</head>
+<body class="screen">
+	<div class="header">	
+		<div>
+			<a href="setReminder" id="rightOption"><button> add </button></a>
+			<button id="leftOption">edit</button></a> 
+		<h2>Alarms</h2>
+		</div>
+	</div>
+
+	<!--
+	<div class="message">
+		Reminds you X minutes before you need to leave
+	</div>
+	-->	
+
+	<div id="reminderDivB">
+		<!-- Dynamically Listing all of our current reminders -->
+		<ul class="list-unstyled reminderListB">
+		{{#each reminders}}
+			<li class="reminderListB">
+
+				<div class="alarmContent">
+					<p class="timeDisplay"> {{classTime}} </p>
+					<p> {{day}} </p>
+				</div>	
+			
+				<div class="onoffswitch switchB">
+				    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch{{@index}}" unchecked>
+				    <label class="onoffswitch-label" for="myonoffswitch{{@index}}">
+				        <span class="onoffswitch-inner"></span>
+				        <span class="onoffswitch-switch"></span>
+				    </label>
+				</div>
+
+			</li>
+		{{/each}}		
+		</ul>	
+	</div>
+
+
+	<!-- FOOTER -->
+	<table>
+		<tr>
+			<th bgcolor="white">
+				<a href="parking">
+					<img src="images/parking.png" id="appLogo" style="width:50px;height:50px;">
+				</a>	
+				<form action="parking">
+					<input type="submit" value="Parking" />
+				</form>
+			</th>
+			<th bgcolor="white">
+				<img src="images/reminding_select.png" id="appLogo" style="width:50px;height:50px;">
+				<form action="reminders">
+					<input type="submit" value="Alarms" />
+				</form>
+			</th>
+			<th bgcolor="white">
+				<a href="settings">
+					<img src="images/setting.png" id="appLogo" style="width:50px;height:50px;">
+				</a>	
+				<form action="settings">
+					<input type="submit" value="Settings" />
+				</form>
+			</th>
+		</tr>	
+	</table>		
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html> 
