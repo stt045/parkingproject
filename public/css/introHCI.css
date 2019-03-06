@@ -465,6 +465,14 @@ th {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
+.switchB {
+	
+}
+
+.days {
+	margin-left: 30px;
+}
+
 .remove_mobile {
 	border:none;
     background-image:none;
