@@ -18,6 +18,7 @@ var setReminder = require('./routes/setReminder');
 var help = require('./routes/help');
 var settings = require('./routes/settings');
 var add = require('./routes/add');
+var alarms = require('./routes/alarms');
 
 
 // Example route
@@ -67,6 +68,7 @@ app.get('/help', help.view);
 app.get('/permit', permit.view);
 app.get('/add', add.addReminder);
 app.get('/viewAlt', reminders.viewAlt);
+app.get('/alarms', alarms.view);
 
 
 
