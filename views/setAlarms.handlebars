@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Add Reminder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="screen">
+	<div class="header">
+		<div>
+		<!--a href="reminders" id="rightOption"> save </a-->
+		<a href="reminders" id="leftOption"><button class="remove_mobile"> cancel </button></a>
+		<h2>Add Reminder</h2>
+		</div>
+	</div>
+
+	<form id="addReminderForm" role="form" method="get" action="/add">
+	<div class="container">
+		
+		<label for="classTime">Time of Class</label>
+    	<input type="time" placeholder="Enter Time" name="time" required>
+
+    	<p> <br/> </p>
+
+    	<label for="reminderTime">Reminder</label>
+    	<input type="number" placeholder="Time in Minutes" name="reminder" required>
+
+    	<p> <br/> </p>
+
+    	<label for="day">Days of Week</label>
+
+    	<div class="weekDays-selector">
+		  <input type="checkbox" id="mon" class="weekday" name="mon"/>
+		  <label for="mon">M</label>
+		  <input type="checkbox" id="tue" class="weekday" name="tue"/>
+		  <label for="tue">Tu</label>
+		  <input type="checkbox" id="wed" class="weekday" name="wed"/>
+		  <label for="wed">W</label>
+		  <input type="checkbox" id="thu" class="weekday" name="thur"/>
+		  <label for="thu">Th</label>
+		  <input type="checkbox" id="fri" class="weekday" name="fri"/>
+		  <label for="fri">F</label>
+		</div>
+
+		<input type="hidden" id="getWeekdays" value="" name="day" required> 
+
+    </div>
+
+    <div class="savebtn">
+			<input type="submit" id="submitBtn" class="block" value="Save" onclick=reminderInfo()></input>
+	</div>
+	</form>
+
+		    <script>
+	   		function reminderInfo() {
+
+	    	var i = 1
+
+	    	var monday = (document.getElementById("mon")).checked
+	    	var tuesday = (document.getElementById("tue")).checked
+	    	var wednesday = (document.getElementById("wed")).checked
+	    	var thursday = (document.getElementById("thu")).checked
+	    	var friday = (document.getElementById("fri")).checked
+
+	    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
+	    		alert("please select weekdays")
+	    	}
+
+	    	var days =""
+	    	if (monday) {
+	    		days+= "M "
+	    	} 
+	    	if (tuesday) {
+	    		days += "Tu "
+	    	}
+	    	if (wednesday) {
+	    		days += "W "
+	    	}
+	    	if (thursday) {
+	    		days += "Th "
+	    	}
+	    	if (friday) {
+	    		days += "F"
+	    	}
+	    	var x = (document.getElementById("getWeekdays"))
+	    	x.value = days
+		}
+
+		</script>
+	
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -19,6 +19,7 @@ var help = require('./routes/help');
 var settings = require('./routes/settings');
 var add = require('./routes/add');
 var alarms = require('./routes/alarms');
+var setAlarms = require('./routes/setAlarms');
 
 
 // Example route
@@ -69,6 +70,7 @@ app.get('/permit', permit.view);
 app.get('/add', add.addReminder);
 app.get('/viewAlt', reminders.viewAlt);
 app.get('/alarms', alarms.view);
+app.get('/setAlarms', setAlarms.view);
 
 
 
