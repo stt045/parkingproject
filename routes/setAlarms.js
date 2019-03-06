@@ -1,5 +1,5 @@
 /*
- * GET setReminders page.
+ * GET setAlarms page.
  */
 
 exports.view = function(req, res){

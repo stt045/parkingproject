@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>Add Reminder</title>
+	<title>Add Alarms</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -15,20 +15,15 @@
 		<div>
 		<!--a href="reminders" id="rightOption"> save </a-->
 		<a href="reminders" id="leftOption"><button class="remove_mobile"> cancel </button></a>
-		<h2>Add Reminder</h2>
+		<h2>Add Alarm</h2>
 		</div>
 	</div>
 
 	<form id="addReminderForm" role="form" method="get" action="/add">
 	<div class="container">
 		
-		<label for="classTime">Time of Class</label>
+		<p><label for="classTime">Alarm Time</label></p>
     	<input type="time" placeholder="Enter Time" name="time" required>
-
-    	<p> <br/> </p>
-
-    	<label for="reminderTime">Reminder</label>
-    	<input type="number" placeholder="Time in Minutes" name="reminder" required>
 
     	<p> <br/> </p>
 
