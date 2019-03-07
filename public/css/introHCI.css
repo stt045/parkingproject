@@ -36,7 +36,7 @@ table {
 	background-color: #fdc56d;
 	background-color: #ffcb72;
 	z-index: 1;
-	position: sticky;
+	position: fixed;
 	margin-top: 1vh;
 	bottom: 0;
 	height: 10vh;
