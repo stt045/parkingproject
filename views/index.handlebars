@@ -213,11 +213,11 @@
 
 					if(currSpotNum <= 0) {
 						currSpotNum = 0;
-					}else {
-						$(thisLot).text(currSpotNum.toString());
-						sessionStorage.setItem(lot, currSpotNum.toString());
-						//console.log("Vary " + lot + " by: " + currSpotNum.toString());
 					}
+					$(thisLot).text(currSpotNum.toString());
+					sessionStorage.setItem(lot, currSpotNum.toString());
+					//console.log("Vary " + lot + " by: " + currSpotNum.toString());
+					
 
 				} else {
 					// spot is zero, don't edit it
@@ -230,7 +230,7 @@
 		 * determines time interval for when a spot will get updated
 		 */
 		function timeVariationNum() {
-			var myNum = parseInt(Math.random() * 50000);
+			var myNum = parseInt(Math.random() * 1000); // change interval back to 50000
 			//console.log("timeVariationNum: " + myNum);
 			return myNum;
 		}
@@ -241,7 +241,13 @@
 		function spotVariationNum() {
 			var myNum = Math.floor((Math.random() * 3) + 1);
 			//console.log("spotVariationNum: " + myNum);
-			return myNum;
+			var determine = Math.random();
+			console.log(determine);
+			if(determine >= 0.5) {
+				return myNum;
+			}else {
+				return myNum * -1;
+			}
 		}
 	</script>	
 	<script src="https://code.jquery.com/jquery.js"></script>
