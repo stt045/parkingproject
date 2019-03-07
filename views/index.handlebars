@@ -189,6 +189,9 @@
 			$("#n8").text("0");
 		}
 
+		// Call to begin spot variation system
+		startVariation();
+
 		/*
 		 * Function that enables the parking spot variability
 		 */
@@ -204,21 +207,23 @@
 				if(sessionStorage.getItem(lot) != "0") {
 					var thisLot = document.getElementById(lot);
 					var currSpotNum = parseInt($(thisLot).text());
-					currSpotNum = currSpotNum + spotVariationNum;
+					//console.log("currSpotNum: " + currSpotNum);
+					currSpotNum = currSpotNum + spotVariationNum();
+					//console.log("currSpotNum Edit: " + currSpotNum);
 
 					if(currSpotNum <= 0) {
 						currSpotNum = 0;
+					}else {
+						$(thisLot).text(currSpotNum.toString());
+						sessionStorage.setItem(lot, currSpotNum.toString());
+						//console.log("Vary " + lot + " by: " + currSpotNum.toString());
 					}
-					$(thisLot).text(toString(currSpotNum));
-					sessionStorage.setItem(lot, toString(currSpotNum));
 
 				} else {
 					// spot is zero, don't edit it
 
 				}
-
-
-			}, spotVariationNum()); 	
+			}, timeVariationNum()); 	
 		}
 
 		/*
@@ -226,6 +231,7 @@
 		 */
 		function timeVariationNum() {
 			var myNum = parseInt(Math.random() * 50000);
+			//console.log("timeVariationNum: " + myNum);
 			return myNum;
 		}
 
@@ -234,6 +240,7 @@
 		 */
 		function spotVariationNum() {
 			var myNum = Math.floor((Math.random() * 3) + 1);
+			//console.log("spotVariationNum: " + myNum);
 			return myNum;
 		}
 	</script>	

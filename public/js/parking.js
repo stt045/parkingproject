@@ -57,7 +57,7 @@ $(document).ready(function() {
 		console.log("on/off clicked");
 		sessionStorage.setItem(this.id, this.checked);
 		var timerVar;
-		var randTime = parseInt(Math.random() * 100000);
+		var randTime = Math.floor(Math.random() * 100000);
 
 		console.log("checked is: " + this.checked);
 
