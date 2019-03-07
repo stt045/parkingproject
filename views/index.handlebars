@@ -188,6 +188,54 @@
 		if(sessionStorage.getItem("n8") == "0") {
 			$("#n8").text("0");
 		}
+
+		/*
+		 * Function that enables the parking spot variability
+		 */
+		function startVariation() {
+			var parking = ["n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8"];
+			// need to add a stopping condition whenever spots turn to 0
+			var myTimer = setInterval(function(){
+				// create a randomized selector tool to determine which parking structure to update
+				var lotNum = Math.floor((Math.random() * 8));
+				var lot = parking[lotNum];
+
+				// current spot is not zero
+				if(sessionStorage.getItem(lot) != "0") {
+					var thisLot = document.getElementById(lot);
+					var currSpotNum = parseInt($(thisLot).text());
+					currSpotNum = currSpotNum + spotVariationNum;
+
+					if(currSpotNum <= 0) {
+						currSpotNum = 0;
+					}
+					$(thisLot).text(toString(currSpotNum));
+					sessionStorage.setItem(lot, toString(currSpotNum));
+
+				} else {
+					// spot is zero, don't edit it
+
+				}
+
+
+			}, spotVariationNum()); 	
+		}
+
+		/*
+		 * determines time interval for when a spot will get updated
+		 */
+		function timeVariationNum() {
+			var myNum = parseInt(Math.random() * 50000);
+			return myNum;
+		}
+
+		/*
+		 * Function used to generate a random number interval for parking spot variations
+		 */
+		function spotVariationNum() {
+			var myNum = Math.floor((Math.random() * 3) + 1);
+			return myNum;
+		}
 	</script>	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
