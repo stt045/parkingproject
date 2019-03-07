@@ -58,7 +58,8 @@ th {
 	position: center;
 	background-color: #f9f1e3;
 	overflow-y: auto;
-	height: 74.5vh;
+	height: 60vh;
+	/*height: 74.5vh;*/
 }
 
 .options li {
@@ -118,7 +119,6 @@ th {
 	margin-top: 150px;
 	overflow: auto;
 	height: 56vh;
-
 }
 
 .permits li{
@@ -220,8 +220,7 @@ th {
 	position: center;
 	overflow-y: auto;
 	position: relative;
-	height: 638px;
-
+	height: 70vh;
 }
 
 .settings li {
@@ -237,10 +236,8 @@ th {
 	padding-right: 10px;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.settings th {
 	background-color: white;
+
 }
 
 .parkStyle { /* Continue to add styling and color */
@@ -472,14 +469,9 @@ th {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-.switchB {
-	
-}
-
 .days {
 	margin-left: 30px;
 }
-
 
 .remove_mobile {
 	border:none;
