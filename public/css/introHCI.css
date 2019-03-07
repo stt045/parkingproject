@@ -9,7 +9,7 @@
 	top: 0;
 	position: sticky;
 	text-align: center;
-	padding-top: 5px;
+	padding-top: 1.5vh;
 	height: 10vh;
 	background-color: #ffcb72;
 	z-index: 1;
@@ -17,6 +17,12 @@
 
 #parkingHeader {
 	height: 14.5vh;	
+	top: 0;
+	position: sticky;
+	text-align: center;
+	padding-top: 0.1vh;
+	background-color: #ffcb72;
+	z-index: 1;
 }
 
 .parkStyle2 { /* Permit visibility on parking page*/
@@ -58,8 +64,7 @@ th {
 	position: center;
 	background-color: #f9f1e3;
 	overflow-y: auto;
-	height: 60vh;
-	/*height: 74.5vh;*/
+	height: 74.5vh;
 }
 
 .options li {
@@ -263,17 +268,19 @@ th {
 	position: absolute;
 	right: 0;
 	margin: 10px;
+	margin-top: 1.5vh;
 }
 
 #leftOption {
 	position: absolute;
 	left: 0;
 	margin: 10px;
+	margin-top: 1.5vh;
 }
 
 /* REMINDERS PAGE */
 #reminderDiv {
-	height: 77vh;
+	height: 79vh;
 	overflow-y: auto;
 	position: relative;
 }
@@ -473,6 +480,7 @@ th {
 	margin-left: 30px;
 }
 
+/* Optimize Style on Mobile View */
 .remove_mobile {
 	border:none;
     background-image:none;
@@ -481,12 +489,6 @@ th {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-
-
-#permit_logout {
-	
-}
-
 
 
 
