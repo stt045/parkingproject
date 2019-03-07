@@ -164,30 +164,48 @@
 	</table>	
 
 	<script>
+
 		if(sessionStorage.getItem("n1") == "0") {
 			$("#n1").text("0");
+		}else if(sessionStorage.getItem("n1") != null) {
+			$("#n1").text(sessionStorage.getItem("n1"));
 		}
 		if(sessionStorage.getItem("n2") == "0") {
 			$("#n2").text("0");
+		}else if(sessionStorage.getItem("n2") != null) {
+			$("#n2").text(sessionStorage.getItem("n2"));
 		}
 		if(sessionStorage.getItem("n3") == "0") {
 			$("#n3").text("0");
+		}else if(sessionStorage.getItem("n3") != null) {
+			$("#n3").text(sessionStorage.getItem("n3"));
 		}
 		if(sessionStorage.getItem("n4") == "0") {
 			$("#n4").text("0");
+		}else if(sessionStorage.getItem("n4") != null) {
+			$("#n4").text(sessionStorage.getItem("n4"));
 		}
 		if(sessionStorage.getItem("n5") == "0") {
 			$("#n5").text("0");
+		}else if(sessionStorage.getItem("n5") != null) {	
+			$("#n5").text(sessionStorage.getItem("n5"));
 		}
 		if(sessionStorage.getItem("n6") == "0") {
 			$("#n6").text("0");
+		}else if(sessionStorage.getItem("n6") != null) {
+			$("#n6").text(sessionStorage.getItem("n6"));
 		}
 		if(sessionStorage.getItem("n7") == "0") {
 			$("#n7").text("0");
+		}else if(sessionStorage.getItem("n7") != null) {
+			$("#n7").text(sessionStorage.getItem("n7"));
 		}
 		if(sessionStorage.getItem("n8") == "0") {
 			$("#n8").text("0");
+		}else if(sessionStorage.getItem("n8") != null) {
+			$("#n8").text(sessionStorage.getItem("n8"));
 		}
+		
 
 		// Call to begin spot variation system
 		startVariation();
