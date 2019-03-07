@@ -29,9 +29,7 @@
 	<div class="options">
 		<ul class="list-unstyled">
 			<li id="1"> 		
-				<div class="inner" id="name">
-					Gliderport
-				</div> 
+				<div class="inner" id="name">Gliderport</div> 
 				<div class="inner num">
 					<div class="number" id="n1">
 						63
@@ -42,9 +40,7 @@
 				</div>	
 			</li>
 			<li id="2"> 
-				<div class="inner" id="name">
-					Regents
-				</div> 
+				<div class="inner" id="name">Regents</div> 
 				<div class="inner num">
 					<div class="number" id="n2">
 						54
@@ -55,9 +51,7 @@
 				</div>
 			</li>
 			<li id="3"> 
-				<div class="inner" id="name">
-					Pangea
-				</div> 
+				<div class="inner" id="name">Pangea</div> 
 				<div class="inner num">
 					<div class="number" id="n3">
 						2
@@ -68,9 +62,7 @@
 				</div> 
 			</li>
 			<li id="4"> 
-				<div class="inner" id="name">
-					Osler
-				</div> 
+				<div class="inner" id="name">Osler</div> 
 				<div class="inner num">
 					<div class="number" id="n4">
 						2
@@ -81,9 +73,7 @@
 				</div>
 			</li>
 			<li id="5"> 
-				<div class="inner" id="name">
-					Hopkins
-				</div> 
+				<div class="inner" id="name">Hopkins</div> 
 				<div class="inner num">
 					<div class="number" id="n5">
 						1
@@ -94,9 +84,7 @@
 				</div>
 			</li>
 			<li id="6"> 
-				<div class="inner" id="name">
-					Gilman
-				</div> 
+				<div class="inner" id="name">Gilman</div> 
 				<div class="inner num">
 					<div class="number" id="n6">
 						0
@@ -107,9 +95,7 @@
 				</div>
 			</li>
 			<li id="7"> 
-				<div class="inner" id="name">
-					P406 
-				</div> 
+				<div class="inner" id="name">P406</div> 
 				<div class="inner num">
 					<div class="number" id="n7">
 						0
@@ -120,9 +106,7 @@
 				</div> 
 			</li>
 			<li id="8"> 
-				<div class="inner" id="name">
-					P407
-				</div> 
+				<div class="inner" id="name">P407</div> 
 				<div class="inner num">
 					<div class="number" id="n8">
 						0
@@ -215,26 +199,53 @@
 		 */
 		function startVariation() {
 			var parking = ["n1", "n2", "n3", "n4", "n5", "n6", "n7", "n8"];
+			// dictionary to match id with parking lot name
+			var lotName = {
+			    "n1": "Gliderport",
+			    "n2": "Regents",
+			    "n3": "Pangea",
+			    "n4": "Osler",
+			    "n5": "Hopkins",
+			    "n6": "Gilman",
+			    "n7": "P406",
+			    "n8": "P407"
+			};
+			
 			// need to add a stopping condition whenever spots turn to 0
 			var myTimer = setInterval(function(){
 				// create a randomized selector tool to determine which parking structure to update
 				var lotNum = Math.floor((Math.random() * 8));
 				var lot = parking[lotNum];
+				console.log("lot getting edited: " + lotName[lot]);
 
 				// current spot is not zero
 				if(sessionStorage.getItem(lot) != "0") {
 					var thisLot = document.getElementById(lot);
 					var currSpotNum = parseInt($(thisLot).text());
-					//console.log("currSpotNum: " + currSpotNum);
 					currSpotNum = currSpotNum + spotVariationNum();
-					//console.log("currSpotNum Edit: " + currSpotNum);
 
+					// parking spot hit 0 spots
 					if(currSpotNum <= 0) {
 						currSpotNum = 0;
+
+						// trigger an alert if the notification is on.
+						if(sessionStorage.getItem("notification") == "true") { // send alert
+					 		if(sessionStorage.getItem("currLot") == lotName[lot]) {
+					 			
+					 			swal({
+								  	title: "Parking Alert",
+								  	text: lotName[lot] + " is full",
+								  	icon: "warning",
+								})
+
+					 			var sound = new Audio("sounds/honk.mp3");
+								sound.play();
+					 		}
+						}
+
 					}
 					$(thisLot).text(currSpotNum.toString());
 					sessionStorage.setItem(lot, currSpotNum.toString());
-					//console.log("Vary " + lot + " by: " + currSpotNum.toString());
 					
 
 				} else {
@@ -248,8 +259,8 @@
 		 * determines time interval for when a spot will get updated
 		 */
 		function timeVariationNum() {
-			var myNum = parseInt(Math.random() * 1000); // change interval back to 50000
-			//console.log("timeVariationNum: " + myNum);
+			var myNum = parseInt(Math.random() * 5000); // change interval back to 50000
+			console.log("timeVariationNum: " + myNum);
 			return myNum;
 		}
 
@@ -260,7 +271,7 @@
 			var myNum = Math.floor((Math.random() * 3) + 1);
 			//console.log("spotVariationNum: " + myNum);
 			var determine = Math.random();
-			console.log(determine);
+			//console.log(determine);
 			if(determine >= 0.5) {
 				return myNum;
 			}else {

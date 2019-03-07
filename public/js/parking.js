@@ -271,7 +271,9 @@ $(document).ready(function() {
 
 })
 
+
 function interval() {
+	/*
 	var num = sessionStorage.getItem("curr"); // num holds the id
 	var x = document.getElementById(num); // x holds the actual element
 	
@@ -279,12 +281,13 @@ function interval() {
 	sessionStorage.setItem($(numElement1).attr("id"), "0");
 
 	var myTimer = setInterval(function(){ 
+
 		swal({
 			  	title: "Parking Alert",
 			  	text: sessionStorage.getItem("currLot") + " is full",
 			  	icon: "warning",
 			  	dangerMode: true,
-			})
+		})
 
 		var sound = new Audio("sounds/honk.mp3");
 		sound.play();
@@ -294,6 +297,7 @@ function interval() {
 		
 
 	}, 10000);
+	*/
 }
 
 /*
