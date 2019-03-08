@@ -488,7 +488,7 @@ input[type=password] {
 }
 
 .weekDays-selector input[type=checkbox]:checked + label {
-  background: #4CAF50;
+  background: #4D80BB;
   color: #ffffff;
 }
 /* END add reminders - style weekday buttons */
