@@ -14,44 +14,40 @@
 </head>
 <body class="screen">
 
-  	<!-- Removing the Page Header
-	<div class="header">
-		<h2>LOGIN</h2>
+	<div>
+		<img src="images/logo.png" alt="App Logo" id="appLogoLogin" style="width:100px;height:100px;">
 	</div>	
-	-->
 
 	<!-- Login and Password Fields + Login Button -->
-	<div class="container">
-
-
-    	<label for="username"><b>Username</b></label>
-    	<input type="text" placeholder="Enter Username" name="username" required>
-
-    	<p> <br/> </p>
-
-    	<label for="password"><b>Password</b></label>
-    	<input type="password" placeholder="Enter Password" name="password" required>
-
-    	<p></p>
-
-    	<!-- Need to add functionality to remember users, if possible -->
-    	<font size="-1">
-    	<label>
-      		<input type="checkbox" checked="unchecked" name="remember"> Remember me
-    	</label>
-    	</font>
+	<div class="loginContainer">
+    	<label for="username" class="formLabel">Username</label>
+    	<br/>
+    	<input type="username" placeholder="Enter Username" name="username" class="loginForm"required>
 
     	<br/>
+
+    	<label for="password" class="formLabel">Password</label>
     	<br/>
+    	<input type="password" placeholder="Enter Password" name="password" class="loginForm" required>
+
     	<br/>
-    				
-    	<p class="FBLogin">or login with Facebook<br/>
-			<fb:login-button scope="public_profile, email" onlogin="checkLoginState();"></fb:login-button>
+
+    	<button class="remove_mobile" id="forgetPass" onclick="window.location.href = 'forgot';">forgot password?</button>
+
+    	<br/>
+
+    	<button id="loginButton" onclick="window.location.href = 'permit';"> LOGIN</button>
+
+    	<br/>
+    	
+
+    	<p class="fbOr" style="font-size: 16px;">or</p>
+
+    	<p class="FBLogin fbButton">
+			<fb:login-button data-size="large" scope="public_profile, email" onlogin="checkLoginState();"></fb:login-button>
 		</p>
 
     </div>
-
-    <button class="block" id="loginButton" onclick="window.location.href = 'permit';"> LOGIN</button>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

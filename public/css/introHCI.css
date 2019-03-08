@@ -172,19 +172,57 @@ th {
   left: 5%;
 }
 
+/* Override bootstrap container */
+.loginContainer {
+	margin-top: 10vh;
+}
+
+.formLabel {
+	font-weight: 400;
+	font-size: 18px;
+	margin-left: 10vw;
+}
+
+input[type=username] {
+  	width: 80vw;
+  	padding: 7px;
+  	box-sizing: border-box;
+  	margin-left: 10vw;
+  	margin-bottom: 3vh;
+}
+
+input[type=password] {
+  	width: 80vw;
+  	padding: 7px;
+  	box-sizing: border-box;
+  	margin-left: 10vw;
+}
+
+#forgetPass {
+	margin-left: 60vw;
+	margin-top: 1.5vh;
+}
+
+.fbOr {
+	text-align: center;
+}
+
+.fbButton {
+	text-align: center;
+}	
+
 #loginButton {
-  display: block;
-  width: 90%;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  position: absolute;
-  bottom: 10px;
-  left: 5%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	margin-left: 10vw;
+	width: 80vw;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 10px;
 }
 
 #submitBtn {
@@ -446,6 +484,14 @@ th {
   	width: 50%;
 }
 
+#appLogoLogin {
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 10vh;
+  	width: 50%;
+}
+
 /* viewAlt design for A/B Testing */
 .timeDisplay {
 	font-size: 35px;
@@ -489,13 +535,6 @@ th {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-
-
-
-
-
-
-
 
 
 
