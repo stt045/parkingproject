@@ -233,12 +233,12 @@ input[type=password] {
 	margin-left: 10vw;
 	width: 80vw;
 	border: none;
-	background-color: #4D80BB;
+	background-color: #4CAF50;
 	color: white;
 	padding: 12px;
 	font-size: 16px;
 	text-align: center;
-	border-radius: 60px;
+	border-radius: 10px;
 }
 
 #submitBtn {

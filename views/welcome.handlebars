@@ -9,28 +9,28 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
 </head>
-<body class="screen">
-	<div class="header">
-		<h2> Welcome! </h2>
-	</div>
+<body background="images/blurred.jpg">
 
-	
 	<div>
-		<img src="images/logo.png" alt="App Logo" id="appLogo" style="width:200px;height:200px;">
+		<img src="images/logo.png" alt="App Logo" id="appLogoLogin" style="width:100px;height:100px;">
 	</div>	
+
+	<h2 id="welcomeTag"> Park Now </h2>
 	
+	<hr>
 
 	<p class="description">
-	This app is aimed to help UCSD students more quickly find parking on campus.
-	<br/><br/>
-	It allows users to view current parking conditions on campus and recieve updates as to when parking lots are filling up or are full.
-	<br/><br/>
-	Users also have the ability to set reminders for when to leave their home in the morning to guaruntee parking on campus.
+		Park Now helps UCSD students view current parking conditions, so you'll never be late again!
+		<br/><br/>
+	
 	</p>
 
 
-	<button class="block" id="welcomeButton" onclick="window.location.href = 'login';"> CONTINUE </button>
-
+	<button id="welcomeButton" onclick="window.location.href = 'login';"> SIGN IN </button>
+	<br/>
+	<br/>
+	<br/>
+	<button id="signupButton" onclick="window.location.href = 'signup';"> SIGN UP </button>
 	<!--
 	<div class="next">
 		<form action="login">
