@@ -30,8 +30,8 @@ Users also have the ability to set alarms.
 * [x] Make sure turning on reminders works correctly
 
 **STRECH GOALS TO IMPLEMENT**
-* [ ] Add a random number generator for spot count with increment/decrement of +-2 in randomize time intervals
-* [ ] Overhaul the welcome page into multiple step by step instructions on how to use the app - Joy
+* [x] Add a random number generator for spot count with increment/decrement of +-3 in randomize time intervals
+* [x] Overhaul the welcome page 
 * [ ] Fix reminder information to display with am/pm and correct formats
 * [ ] Make back buttons and text bigger
 * [ ] Be able to edit the time in the reminders
