@@ -31,15 +31,15 @@
 
     	<div class="weekDays-selector">
 		  <input type="checkbox" id="mon" class="weekday" name="mon"/>
-		  <label for="mon">M</label>
+		  <label for="mon" class="dayLabel">M</label>
 		  <input type="checkbox" id="tue" class="weekday" name="tue"/>
-		  <label for="tue">Tu</label>
+		  <label for="tue" class="dayLabel">Tu</label>
 		  <input type="checkbox" id="wed" class="weekday" name="wed"/>
-		  <label for="wed">W</label>
+		  <label for="wed" class="dayLabel">W</label>
 		  <input type="checkbox" id="thu" class="weekday" name="thur"/>
-		  <label for="thu">Th</label>
+		  <label for="thu" class="dayLabel">Th</label>
 		  <input type="checkbox" id="fri" class="weekday" name="fri"/>
-		  <label for="fri">F</label>
+		  <label for="fri" class="dayLabel">F</label>
 		</div>
 
 		<input type="hidden" id="getWeekdays" value="" name="day" required> 
@@ -51,42 +51,42 @@
 	</div>
 	</form>
 
-		    <script>
-	   		function reminderInfo() {
+	<script>
+	   	function reminderInfo() {
 
-	    	var i = 1
+    	var i = 1
 
-	    	var monday = (document.getElementById("mon")).checked
-	    	var tuesday = (document.getElementById("tue")).checked
-	    	var wednesday = (document.getElementById("wed")).checked
-	    	var thursday = (document.getElementById("thu")).checked
-	    	var friday = (document.getElementById("fri")).checked
+    	var monday = (document.getElementById("mon")).checked
+    	var tuesday = (document.getElementById("tue")).checked
+    	var wednesday = (document.getElementById("wed")).checked
+    	var thursday = (document.getElementById("thu")).checked
+    	var friday = (document.getElementById("fri")).checked
 
-	    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
-	    		alert("please select weekdays")
-	    	}
+    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
+    		alert("please select weekdays")
+    	}
 
-	    	var days =""
-	    	if (monday) {
-	    		days+= "M "
-	    	} 
-	    	if (tuesday) {
-	    		days += "Tu "
-	    	}
-	    	if (wednesday) {
-	    		days += "W "
-	    	}
-	    	if (thursday) {
-	    		days += "Th "
-	    	}
-	    	if (friday) {
-	    		days += "F"
-	    	}
-	    	var x = (document.getElementById("getWeekdays"))
-	    	x.value = days
+    	var days =""
+    	if (monday) {
+    		days+= "M "
+    	} 
+    	if (tuesday) {
+    		days += "Tu "
+    	}
+    	if (wednesday) {
+    		days += "W "
+    	}
+    	if (thursday) {
+    		days += "Th "
+    	}
+    	if (friday) {
+    		days += "F"
+    	}
+    		var x = (document.getElementById("getWeekdays"))
+    		x.value = days
 		}
 
-		</script>
+	</script>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

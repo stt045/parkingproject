@@ -197,6 +197,11 @@ input[type=password] {
   	margin-left: 10vw;
 }
 
+.dayLabel {
+	width: 100px;
+	border: 1px solid black;
+}
+
 #forgetPass {
 	margin-left: 60vw;
 	margin-top: 1.5vh;
@@ -237,6 +242,7 @@ input[type=password] {
   position: absolute;
   bottom: 10px;
   left: 5%;
+  border-radius: 10px;
 }
 
 .block:hover {
@@ -502,7 +508,7 @@ input[type=password] {
 }
 
 #reminderDivB {
-	height: 77vh;
+	height: 78vh;
 	overflow-y: auto;
 }
 
