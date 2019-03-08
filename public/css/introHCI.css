@@ -114,21 +114,19 @@ th {
 
 /* text on permit's page */
 .announcement {
-	position: absolute;
-	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-top: 10vh;
 	text-align: center;
 }
 
 .permits {
-	margin-top: 150px;
+	margin-top: 3vh;
 	overflow: auto;
-	height: 56vh;
+	height: 61vh;
 }
 
 .permits li{
 	border-radius: 10px;
-	margin: 10px;
+	margin: 1.5vh 5vw;
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
@@ -138,6 +136,7 @@ th {
 
 #startUsing {
 	position: fixed;
+	border-radius: 10px;
 	bottom: 20px;
 }
 
