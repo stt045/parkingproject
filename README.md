@@ -24,7 +24,7 @@ Users also have the ability to set alarms.
 * [x] Come up with specific text for the reminder screen
 * [x] Update parking spots when parking alerts go off
 * [x] Make reminders actually go away when you edit reminders and go to a different page
-* [ ] Add an actual alarm feature to the application
+* [x] Add an actual alarm feature to the application
 * [x] Fix Facebook login
 * [x] Fix scrolling on select permit page
 * [x] Make sure turning on reminders works correctly
@@ -33,7 +33,8 @@ Users also have the ability to set alarms.
 * [x] Add a random number generator for spot count with increment/decrement of +-3 in randomize time intervals
 * [x] Overhaul the welcome page 
 * [ ] Fix reminder information to display with am/pm and correct formats
-* [ ] Make back buttons and text bigger
+* [x] Make back buttons and text bigger
 * [ ] Be able to edit the time in the reminders
+* [x] Overhaul the design with colors, shapes, fonts
 
 
