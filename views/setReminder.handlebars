@@ -10,7 +10,7 @@
 	<link href="/css/introHCI.css" rel="stylesheet" type="text/css">
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body class="screen">
+<body background="images/blurred.jpg">
 	<div class="header">
 		<div>
 		<!--a href="reminders" id="rightOption"> save </a-->
@@ -68,7 +68,14 @@
 	    	var friday = (document.getElementById("fri")).checked
 
 	    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
-	    		alert("please select weekdays")
+	    		/*
+	    		swal({
+				  	title: "Alert",
+				  	text: "Please select days",
+				  	icon: "warning",
+				})
+				*/
+				alert("please select weekdays");
 	    	}
 
 	    	var days =""

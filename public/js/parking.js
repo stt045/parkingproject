@@ -21,7 +21,7 @@ $(document).ready(function() {
 	}else {
 		var num = sessionStorage.getItem("curr");
 		var x = document.getElementById(num);
-		$(x).css("background", "#4CAF50");
+		$(x).css("background", "#4D80BB"); /* original green : #4CAF50 */
 		$(x).css('color', 'white');
 	}
 
@@ -82,7 +82,7 @@ $(document).ready(function() {
 		if(color == "rgba(0, 0, 0, 0)" || color == "rgb(255, 255, 255)") {
 			$(".permits li").css("background", "white");
 			$(".permits li").css("color", "black");
-			$(this).css("background", "#4CAF50");
+			$(this).css("background", "#4D80BB");
 			$(this).css('color', 'white');
 
 			var permitId = this.id;
@@ -90,7 +90,7 @@ $(document).ready(function() {
 			console.log("current permit is: " + sessionStorage.getItem("permit")); 
 
 			// start using parknow button turns green (clickable)
-			$(button).css("background-color", "#4CAF50");
+			$(button).css("background-color", "#4D80BB");
 			$(button).removeAttr("disabled");
 
 		} else { // Deselection
@@ -135,7 +135,7 @@ $(document).ready(function() {
 			if(color == "rgba(0, 0, 0, 0)" || color == "rgb(255, 255, 255)") {
 				$(".options li").css("background", "white");
 				$(".options li").css("color", "black");
-				$(this).css("background", "#4CAF50");
+				$(this).css("background", "#4D80BB");
 				$(this).css('color', 'white');
 
 				// Assign current lot

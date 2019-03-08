@@ -1,7 +1,7 @@
-
-/* ENTIRE SCREEN */
-.screen {
-	background-color: #f9f1e3;
+body {
+  background-image: "images/blurred.jpg";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* PAGE HEADERS */
@@ -11,7 +11,7 @@
 	text-align: center;
 	padding-top: 1.5vh;
 	height: 10vh;
-	background-color: #ffcb72;
+	background-color: #FFCBB1; /*ffcb72 is the original orange */
 	z-index: 1;
 }
 
@@ -21,7 +21,7 @@
 	position: sticky;
 	text-align: center;
 	padding-top: 0.1vh;
-	background-color: #ffcb72;
+	background-color: #FFCBB1;
 	z-index: 1;
 }
 
@@ -245,7 +245,7 @@ input[type=password] {
   display: block;
   width: 90%;
   border: none;
-  background-color: #4CAF50;
+  background-color: #4D80BB;
   color: white;
   padding: 14px 28px;
   font-size: 16px;
@@ -367,8 +367,8 @@ input[type=password] {
 /* Style The Dropdown Button */
 .dropbtn {
   border-radius: 10px;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #FFCBB1;
+  color: #241C19;
   padding: 16px;
   font-size: 25px;
   border: none;
@@ -413,7 +413,7 @@ input[type=password] {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #EDBDA5;
 }
 
 #helpPage {
