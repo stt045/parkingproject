@@ -68,7 +68,7 @@ th {
 
 .options li {
 	height: 14vh;
-	margin: 10px;
+	margin: 1.5vh 5vw;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 10px;
@@ -77,6 +77,15 @@ th {
 	border-radius: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
 	position: relative;
+	width: 50vw;
+	margin-left: 25vw;
+}
+
+@media only screen and (max-width: 1355px) {
+  .options li {
+   		width: 80vw;
+   		margin-left: 5vw;
+  }
 }
 
 .inner {
