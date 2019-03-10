@@ -43,12 +43,13 @@ $(document).ready(function() {
 
 
 	/* For Google Analytics */
+	/*
 	$(".onoffswitch").click(function(e) {
 		//e.preventDefault();
 		ga('create', 'UA-134918054-1', 'auto');
 		ga("send", "event", 'toggle', 'click');
 	});
-
+	*/
 
 	/*
 	 * Function that runs with reminders get toggeled on/off
@@ -229,7 +230,7 @@ $(document).ready(function() {
 				  span.className = "close";
 				  span.appendChild(txt);
 				  $(span).css("position", "relative");
-				  $(span).css("top", "-138px");
+				  $(span).css("top", "-155px");
 				  $(span).css("right", "5px");
 
 				  deleteBtns[i].appendChild(span);

@@ -82,10 +82,10 @@ th {
 }
 
 @media only screen and (max-width: 1355px) {
-  .options li {
+  	.options li {
    		width: 80vw;
    		margin-left: 5vw;
-  }
+  	}
 }
 
 .inner {
@@ -342,6 +342,20 @@ input[type=password] {
 	margin-top: 1.5vh;
 }
 
+/* viewAlt design for A/B Testing */
+.timeDisplay {
+	font-size: 35px;
+	padding-top: 20px;
+}
+
+.alarmContent {
+	margin-left: 20px
+}
+
+.days {
+	margin-left: 30px;
+}
+
 /* REMINDERS PAGE */
 #reminderDiv {
 	height: 79vh;
@@ -356,13 +370,13 @@ input[type=password] {
 
 .reminderList li {
 	border-radius: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 10px;
+	margin: 1.5vh 5vw;
+	width: 90vw;
+	padding: 1vh 1vw;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+	position: relative;
+	height: 18vh;
 }
 
 .psetting {
@@ -432,8 +446,8 @@ input[type=password] {
 /* on-off switch reminders page */ 
 .onoffswitch {
     position: relative; width: 72px;
-    top: -50px;
-    left:230px;
+    top: -11vh;
+    left: 65vw;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
@@ -516,40 +530,6 @@ input[type=password] {
   	margin-right: auto;
   	margin-top: 10vh;
   	width: 50%;
-}
-
-/* viewAlt design for A/B Testing */
-.timeDisplay {
-	font-size: 35px;
-	padding-top: 20px;
-}
-
-.alarmContent {
-	margin-left: 20px
-}
-
-#reminderDivB {
-	height: 78vh;
-	overflow-y: auto;
-}
-
-.reminderListB {
-	position: center;
-	font-size: 18px;
-}
-
-.reminderListB li {
-	border-radius: 10px;
-	margin-left: 25px;
-	margin-right: 25px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
-}
-
-.days {
-	margin-left: 30px;
 }
 
 /* Optimize Style on Mobile View */
