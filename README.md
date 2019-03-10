@@ -20,21 +20,15 @@ as to when parking lots are filling up or are full.
 Users also have the ability to set alarms.
 
 **TO DO**
-* [x] Create the alert for the reminder notifications
-* [x] Come up with specific text for the reminder screen
-* [x] Update parking spots when parking alerts go off
-* [x] Make reminders actually go away when you edit reminders and go to a different page
-* [x] Add an actual alarm feature to the application
-* [x] Fix Facebook login
-* [x] Fix scrolling on select permit page
-* [x] Make sure turning on reminders works correctly
+* [ ] Link the alarms / setAlarms pages to the app and get rid of the reminders pages
+* [ ] finish styling with color selections and consisteny background on each webpage
+* [ ] make the display of the alarms more readable and friendly, less like they're clickable buttons
+* [ ] have presentation mode in parking and alarms screen to immediately prompt the alerts.
+* [ ] Finalize the design with colors, shapes, fonts
 
 **STRECH GOALS TO IMPLEMENT**
-* [x] Add a random number generator for spot count with increment/decrement of +-3 in randomize time intervals
-* [x] Overhaul the welcome page 
 * [ ] Fix reminder information to display with am/pm and correct formats
-* [x] Make back buttons and text bigger
-* [ ] Be able to edit the time in the reminders
-* [x] Overhaul the design with colors, shapes, fonts
+* [ ] 
+
 
 
