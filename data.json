@@ -1,29 +1,29 @@
 {
 	"reminders": [
 		{
-			"reminderTime": "20",
-			"classTime": "8:00am",
-			"day": "M"
+			"classTime": "8:00",
+			"day": "M",
+			"format": "AM"
 		},
 		{
-			"reminderTime": "20",
-			"classTime": "9:30am",
-			"day": "Tu"
+			"classTime": "9:30",
+			"day": "Tu",
+			"format": "AM"
 		},
 		{
-			"reminderTime": "25",
-			"classTime": "8:00am",
-			"day": "W"
+			"classTime": "8:00",
+			"day": "W",
+			"format": "AM"
 		},
 		{
-			"reminderTime": "30",
-			"classTime": "9:30am",
-			"day": "Th"
+			"classTime": "9:30",
+			"day": "Th",
+			"format": "AM"
 		},
 		{
-			"reminderTime": "10",
-			"classTime": "8:00am",
-			"day": "F"
+			"classTime": "8:00",
+			"day": "F",
+			"format": "AM"
 		}
 	]
 }

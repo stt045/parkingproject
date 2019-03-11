@@ -62,7 +62,7 @@
 		{{#each reminders}}
 			<li class="reminderList" id="list{{@index}}">
 				<div class="alarmContent">
-					<p class="timeDisplay"> {{classTime}} </p>
+					<p class="timeDisplay" id="time{{@index}}"> {{classTime}} </p>
 					<p> {{day}} </p>
 				</div>	
 			
@@ -78,7 +78,7 @@
 		</ul>	
 		</div>
 
-
+		<p id="length">{{ reminders.length }}</p>
 
 	<!-- FOOTER -->
 	<table>
@@ -109,6 +109,30 @@
 	</table>		
 
 	<script>
+
+		function print(t) {
+		  	var [h,m] = t.split(":");
+		  	var time = ( (h % 12 + 12 * (h % 12 == 0)) + ":" + m);
+		  	if(h >= 12) {
+		  		var timeformat = "PM";
+		  	}else {
+		  		var timeformat = "AM";
+		  	}
+		  	time = time + timeformat;
+		  	return time;
+		}
+
+		var arraylength = document.getElementById("length").innerHTML;
+
+		console.log("arraylength: " + arraylength);
+
+		for(var i = 0; i < arraylength; i++) {
+			var t = document.getElementById("time"+i.toString()).innerHTML
+			var newTime = print(t);
+			
+			document.getElementById("time"+i.toString()).innerHTML = newTime;
+		}
+
 		if(sessionStorage.getItem("list0") == "none") {
 			var list0 = document.getElementById("list0");
 			list0.style.display = "none";

@@ -4,7 +4,6 @@ exports.addReminder = function(req, res) { 
 	data["viewAlt"] = false;
 
 	var newReminder = {
-		"reminderTime": req.query.reminder,
 		"classTime": req.query.time,
 		"day": req.query.day
 	};
