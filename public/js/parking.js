@@ -267,7 +267,7 @@ $(document).ready(function() {
 	});
 
 	$("#logout").click(function() {
-		window.location.href = "login";
+		window.location.href = "welcome";
 	});
 
 })
