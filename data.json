@@ -1,29 +1,16 @@
 {
 	"reminders": [
 		{
-			"classTime": "8:00",
-			"day": "M",
-			"format": "AM"
+			"classTime": "10:00",
+			"day": "M F"
 		},
 		{
 			"classTime": "9:30",
-			"day": "Tu",
-			"format": "AM"
+			"day": "Tu Th"
 		},
 		{
 			"classTime": "8:00",
-			"day": "W",
-			"format": "AM"
-		},
-		{
-			"classTime": "9:30",
-			"day": "Th",
-			"format": "AM"
-		},
-		{
-			"classTime": "8:00",
-			"day": "F",
-			"format": "AM"
+			"day": "W"
 		}
 	]
 }

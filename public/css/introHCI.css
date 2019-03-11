@@ -332,14 +332,16 @@ input[type=password] {
 	position: absolute;
 	right: 0;
 	margin: 10px;
-	margin-top: 1.5vh;
+	margin-top: 1vh;
+	font-size: 5vw;
 }
 
 #leftOption {
 	position: absolute;
 	left: 0;
 	margin: 10px;
-	margin-top: 1.5vh;
+	margin-top: 1vh;
+	font-size: 5vw;
 }
 
 /* viewAlt design for A/B Testing */
