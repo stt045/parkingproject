@@ -218,6 +218,22 @@ input[type=password] {
   	margin-left: 10vw;
 }
 
+input[type=time] {
+	width: 40vw;
+	height: 6vh;
+	text-align: center;
+	font-size: 30px;
+	margin-left: 30vw;
+}
+
+#alarmDiv {
+	margin-top: 15vh;
+}
+
+#timeLabel, #weekdayLabel {
+	text-align: center;
+}
+
 .dayLabel {
 	width: 100px;
 	border: 1px solid black;
@@ -496,6 +512,10 @@ input[type=password] {
 /* END on-off switch reminders page */ 
 
 /* add reminders - style weekday buttons */
+.weekDays-selector {
+	margin-left: 12.5vw;
+}
+
 .weekDays-selector input {
   display: none!important;
 }
@@ -504,12 +524,13 @@ input[type=password] {
   display: inline-block;
   border-radius: 6px;
   background: #dddddd;
-  height: 40px;
-  width: 30px;
-  margin-right: 4px;
-  line-height: 40px;
+  height: 8vh;
+  width: 14vw;
+  margin-right: 1vw;
+  line-height: 60px;
   text-align: center;
   cursor: pointer;
+  font-size: 6vw;
 }
 
 .weekDays-selector input[type=checkbox]:checked + label {

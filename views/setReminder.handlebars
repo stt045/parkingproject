@@ -20,15 +20,15 @@
 	</div>
 
 	<form id="addReminderForm" role="form" method="get" action="/add">
-	<div class="container">
-		
-		<p><label for="classTime">Alarm Time</label></p>
+	
+	<div id="alarmDiv">	
+		<h2 id="timeLabel">Alarm Time</h2>
 		
     	<input type="time" placeholder="Enter Time" name="time" required>
 
     	<p> <br/> </p>
 
-    	<label for="day">Days of Week</label>
+    	<h2 id="weekdayLabel">Days of Week</h2>
 
     	<div class="weekDays-selector">
 		  <input type="checkbox" id="mon" class="weekday" name="mon"/>
@@ -52,9 +52,8 @@
 	</div>
 	</form>
 
-		    <script>
-	   		function reminderInfo() {
-
+	<script>
+   		function reminderInfo() {
 	    	var i = 1
 
 	    	var monday = (document.getElementById("mon")).checked
@@ -64,13 +63,6 @@
 	    	var friday = (document.getElementById("fri")).checked
 
 	    	if (!monday && !tuesday && !wednesday && !thursday && !friday) {
-	    		/*
-	    		swal({
-				  	title: "Alert",
-				  	text: "Please select days",
-				  	icon: "warning",
-				})
-				*/
 				alert("please select weekdays");
 	    	}
 
@@ -92,57 +84,9 @@
 	    	}
 	    	var x = (document.getElementById("getWeekdays"))
 	    	x.value = days
-	    		
-	    	/*
-			var days =[]
-	    	if (monday) {
-	    		days.push("Monday")
-	    	} 
-	    	if (tuesday) {
-	    		days.push("Tuesday")
-	    	}
-	    	if (wednesday) {
-	    		days.push("Wednesday")
-	    	}
-	    	if (thursday) {
-	    		days.push("Thursday")
-	    	}
-	    	if (friday) {
-	    		days.push("Friday")
-	    	}
-			*/
-
-	    	//var class_time = (document.getElementById("reminderTime")).value
-	    	//var reminder_time = (document.getElementById("reminderMins")).value
-
-	    	/*
-	    	var reminderJSON = {
-	    		"reminderTime": reminder_time,
-	    		"classTime": class_time, 
-	    		"day": days
-	    	}
-	    	*/
-
-			//TODO: delete
-	    	//alert(class_time)
-	    	//alert(reminder_time)
-	    	//alert(days)
-
-	    	
-			/*
-	    	var fs = require("fs")
-	    	fs.writeFile("/reminders.json", JSON.stringify(reminderJSON), (err) => {
-	    		if (err) {
-	    			alert("error")
-	    			return
-	    		}
-	    		console.log("file created")
-	    	}
-	    	*/
-
 		}
 
-		</script>
+	</script>
 	
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
