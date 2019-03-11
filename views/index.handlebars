@@ -145,6 +145,14 @@
 
 	<script>
 
+		for(var i = 0; i < 9; i++) {
+			if(sessionStorage.getItem("n" + i.toString()) == "0") {
+				$("n" + i.toString()).text("0");
+			}else if(sessionStorage.getItem("n1") != null) {
+				$("n" + i.toString()).text(sessionStorage.getItem("n" + i.toString()));
+			}
+		}
+		/*
 		if(sessionStorage.getItem("n1") == "0") {
 			$("#n1").text("0");
 		}else if(sessionStorage.getItem("n1") != null) {
@@ -185,7 +193,7 @@
 		}else if(sessionStorage.getItem("n8") != null) {
 			$("#n8").text(sessionStorage.getItem("n8"));
 		}
-		
+		*/
 
 		// Call to begin spot variation system
 		startVariation();
