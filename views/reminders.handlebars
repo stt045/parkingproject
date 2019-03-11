@@ -123,6 +123,7 @@
 
 		var arraylength = document.getElementById("length").innerHTML;
 
+		// fixes the am/pm display of each of the alarms
 		for(var i = 0; i < arraylength; i++) {
 			var t = document.getElementById("time"+i.toString()).innerHTML
 			var newTime = print(t);
@@ -130,114 +131,24 @@
 			document.getElementById("time"+i.toString()).innerHTML = newTime;
 		}
 
-		if(sessionStorage.getItem("list0") == "none") {
-			var list0 = document.getElementById("list0");
-			list0.style.display = "none";
-		}
-		if(sessionStorage.getItem("list1") == "none") {
-			var list1 = document.getElementById("list1");
-			list1.style.display = "none";
-		}
-		if(sessionStorage.getItem("list2") == "none") {
-			var list2 = document.getElementById("list2");
-			list2.style.display = "none";
-		}
-		if(sessionStorage.getItem("list3") == "none") {
-			var list3 = document.getElementById("list3");
-			list3.style.display = "none";
-		}
-		if(sessionStorage.getItem("list4") == "none") {
-			var list4 = document.getElementById("list4");
-			list4.style.display = "none";
-		}
-		if(sessionStorage.getItem("list5") == "none") {
-			var list5 = document.getElementById("list5");
-			list5.style.display = "none";
-		}
-		if(sessionStorage.getItem("list6") == "none") {
-			var list6 = document.getElementById("list6");
-			list6.style.display = "none";
-		}
-		if(sessionStorage.getItem("list7") == "none") {
-			var list7 = document.getElementById("list7");
-			list7.style.display = "none";
-		}
-		if(sessionStorage.getItem("list8") == "none") {
-			var list8 = document.getElementById("list8");
-			list8.style.display = "none";
+		// toggles alarm functionality interval
+		for(var i = 0; i < arraylength; i++) {
+			if(sessionStorage.getItem("list" + i.toString()) == "none") {
+				var list = document.getElementById("list" + i.toString());
+				list.style.display = "none";
+			}
 		}
 
-		if(sessionStorage.getItem("myonoffswitch0") == "true") {
-			var switch0 = document.getElementById("myonoffswitch0");
-			switch0.checked = true;
-			console.log("0 is true");
-		}else {
-			var switch0 = document.getElementById("myonoffswitch1");
-			switch0.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch1") == "true") {
-			var switch0 = document.getElementById("myonoffswitch1");
-			switch1.checked = true;
-			console.log("1 is true");
-		}else {
-			var switch1 = document.getElementById("myonoffswitch1");
-			switch1.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch2") == "true") {
-			var switch0 = document.getElementById("myonoffswitch2");
-			switch0.checked = true;
-			console.log("2 is true");
-		}else {
-			var switch2 = document.getElementById("myonoffswitch1");
-			switch2.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch3") == "true") {
-			var switch0 = document.getElementById("myonoffswitch3");
-			switch0.checked = true;
-			console.log("3 is true");
-		}else {
-			var switch3 = document.getElementById("myonoffswitch1");
-			switch3.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch4") == "true") {
-			var switch0 = document.getElementById("myonoffswitch4");
-			switch0.checked = true;
-			console.log("4 is true");
-		}else {
-			var switch4 = document.getElementById("myonoffswitch1");
-			switch4.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch5") == "true") {
-			var switch0 = document.getElementById("myonoffswitch5");
-			switch0.checked = true;
-			console.log("5 is true");
-		}else {
-			var switch5 = document.getElementById("myonoffswitch1");
-			switch5.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch6") == "true") {
-			var switch0 = document.getElementById("myonoffswitch6");
-			switch0.checked = true;
-			console.log("6 is true");
-		}else {
-			var switch6 = document.getElementById("myonoffswitch1");
-			switch6.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch7") == "true") {
-			var switch0 = document.getElementById("myonoffswitch7");
-			switch0.checked = true;
-			console.log("7 is true");
-		}else {
-			var switch7 = document.getElementById("myonoffswitch1");
-			switch7.checked = false;
-		}
-		if(sessionStorage.getItem("myonoffswitch8") == "true") {
-			var switch0 = document.getElementById("myonoffswitch8");
-			switch0.checked = true;
-			console.log("8 is true");
-		}else {
-			var switch8 = document.getElementById("myonoffswitch1");
-			switch8.checked = false;
+		// toggles visibility of the "toggle" switch
+		for(var i = 0; i < arraylength; i++) {
+			if(sessionStorage.getItem("myonoffswitch" + i.toString()) == "true") {
+				var switcher = document.getElementById("myonoffswitch" + i.toString());
+				switcher.checked = true;
+				console.log(i.toString() + " is true");
+			}else {
+				var switcher = document.getElementById("myonoffswitch" + i.toString());
+				switcher.checked = false;
+			}
 		}
 	</script>	
 	<script src="https://code.jquery.com/jquery.js"></script>

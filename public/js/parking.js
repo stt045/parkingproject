@@ -274,6 +274,29 @@ $(document).ready(function() {
 
 
 function interval() {
+
+	if (sessionStorage.getItem("curr") == "8") {
+		console.log("got 8");
+		var num = sessionStorage.getItem("curr"); // num holds the id
+		var x = document.getElementById(num);
+		var numElement1 = $(x).find(".number");
+		sessionStorage.setItem($(numElement1).attr("id"), "0");
+
+		setTimeout(function() {
+			swal({
+				  	title: "Parking Alert",
+				  	text: sessionStorage.getItem("currLot") + " is full",
+				  	icon: "warning",
+				  	dangerMode: true,
+			})
+
+			var sound = new Audio("sounds/honk.mp3");
+			sound.play();
+			var numElement2 = $(x).find(".number");
+			numElement2.text("0");
+		}, 3000);
+	}
+
 	/*
 	var num = sessionStorage.getItem("curr"); // num holds the id
 	var x = document.getElementById(num); // x holds the actual element
