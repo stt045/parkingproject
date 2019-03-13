@@ -42,6 +42,11 @@ $(document).ready(function() {
 	}
 
 
+	// presentation purpose of alarms
+	$("#alarmsHeader").click(function() {
+		alarm();
+	});
+
 	/* For Google Analytics */
 	/*
 	$(".onoffswitch").click(function(e) {
