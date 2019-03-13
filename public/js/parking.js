@@ -334,6 +334,9 @@ function interval() {
  * parking page to turn on alerts for a parking lot of their choice.
  */
 function alarm() {
+	var sound = new Audio("sounds/alarm.mp3");
+	sound.play();
+
 	swal({
 	  	title: "Wake Up!",
 	  	text: "Proceed to parking information?",
@@ -346,6 +349,7 @@ function alarm() {
 	    	window.location.href = "parking";
 	  	} else { // Pressed Cancel
 			console.log("do not proceed to parking page");
+			sound.pause();
 	  	}
 	});
 }
