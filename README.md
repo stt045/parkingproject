@@ -20,15 +20,17 @@ as to when parking lots are filling up or are full.
 Users also have the ability to set alarms.
 
 **TO DO**
-* [ ] Link the alarms / setAlarms pages to the app and get rid of the reminders pages
-* [ ] finish styling with color selections and consisteny background on each webpage
+* [x] Link the alarms / setAlarms pages to the app and get rid of the reminders pages
+* [x] finish styling with color selections and consisteny background on each webpage
 * [ ] make the display of the alarms more readable and friendly, less like they're clickable buttons
-* [ ] have presentation mode in parking and alarms screen to immediately prompt the alerts.
-* [ ] Finalize the design with colors, shapes, fonts
+* [x] have presentation mode in parking to immediately have alerts on the last lot. 
+* [ ] presentation mode for alarms screen to immediately prompt the alerts.
+* [x] Finalize the design with colors, shapes, fonts
 
 **STRECH GOALS TO IMPLEMENT**
-* [ ] Fix reminder information to display with am/pm and correct formats
-* [ ] 
+* [x] Fix alarm information to display with am/pm and correct formats
+* [x] Make buttons look nicer
+* [x] Make setAlarms page have bigger buttons and inputs
 
 
 
