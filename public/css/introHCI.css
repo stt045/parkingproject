@@ -219,7 +219,7 @@ input[type=password] {
 }
 
 input[type=time] {
-	width: 40vw;
+	width: 45vw;
 	height: 6vh;
 	text-align: center;
 	font-size: 30px;
