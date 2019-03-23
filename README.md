@@ -20,3 +20,7 @@ Users can enable notifications on a parking area of their choice to recieve upda
 as to when parking lots are filling up or are full. 
 
 Users also have the ability to set alarms.
+
+
+**Technologies Used**
+HTML5, CSS3, BootStrap4, Javascript, jQuery, Node.js, Express.js
