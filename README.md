@@ -1,6 +1,6 @@
 # Parking Now
 
-Open on mobile device or use Chrome mobile view on desktop browser
+# Open on mobile device or use Chrome mobile view on desktop browser
 
 Project for: **COGS 120 / CSE 170**
 
