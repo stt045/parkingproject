@@ -8,6 +8,7 @@ Run the site by first navigating to the root directory of the project, and run t
 
 The node server should now be running on "http://localhost:3000/welcome" . 
 The landing page should have the "/welcome" at the end of the url.
+Don't forget to be using Chrome's mobile browser to view the site in its intended purpose.
 
 
 
