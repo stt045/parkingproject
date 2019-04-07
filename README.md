@@ -1,11 +1,13 @@
 # Parking Now
 
 # Open on mobile device or use Chrome mobile view on desktop browser
-Run the site by first navigating to the root directory of the project
+Run the site by first navigating to the root directory of the project, and run the following,
+
 - npm install
 - node app.js
-The node server should now be running on "http://localhost:3000/welcome" . The landing page should have the "/welcome" 
-at the end of the url.
+
+The node server should now be running on "http://localhost:3000/welcome" . 
+The landing page should have the "/welcome" at the end of the url.
 
 
 
