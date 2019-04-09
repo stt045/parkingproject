@@ -23,8 +23,7 @@ Park Now is a mobile web app design to assist UCSD students in the horrendous ta
 This is a parking assistant application aimed to help UCSD students more quickly find 
 parking on campus.
 
-It allows users to view current parking conditions across all parking lots and 
-parking structures on campus in real-time.
+It allows users to view current parking conditions across all parking lots and parking structures on campus. The availability is pseudo-generated while we work on collecting parking data from the school.
 
 Users can enable notifications on a parking area of their choice to recieve updates
 as to when parking lots are filling up or are full. 
@@ -33,4 +32,4 @@ Users also have the ability to set alarms.
 
 
 **Technologies Used**
-HTML5, CSS3, BootStrap4, Javascript, jQuery, Node.js, Express.js
+HTML5, CSS3, Javascript, jQuery, Node.js, Express.js
