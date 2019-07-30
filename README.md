@@ -1,5 +1,7 @@
 # Parking Now
 
+This is the front-end application not yet linked to a backend.
+
 # Open on mobile device or use Chrome mobile view on desktop browser
 Run the site by first navigating to the root directory of the project, and run the following,
 
